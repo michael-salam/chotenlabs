@@ -2,7 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+body {
+  @apply bg-bg-light text-text-mid leading-[160%];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-none text-text-dark font-thin;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 1.3444rem + 4.9307vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 0.6333rem + 3.698vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.2111rem + 1.2327vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 1.1055rem + 0.6163vw, 1.5rem);
+}
+
+p {
+  @apply max-w-[60ch];
+}
+
+header {
+  background-image: url(../public/ellipse-gradient.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dynamic-grid {
+  display: grid;
+  gap: 3rem;
+}
+.dynamic-grid-sm {
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+.dynamic-grid-lg {
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+}
+
+.nav-link {
+  @apply hover:text-text-dark hover:font-semibold transition-colors;
+}
+
+.btn {
+  @apply font-bold rounded-md hover:opacity-80 active:opacity-100 transition-opacity;
+}
+
+.btn-dark {
+  @apply bg-black text-white;
+}
+
+.btn-light {
+  @apply bg-white text-bg-dark px-4 py-1;
+}
+
+.sharp-shadow-sm {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+.sharp-shadow-lg {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+.sharp-shadow-light {
+  box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.6);
+  transition: all 0.3s;
+}
+
+.sharp-shadow-sm:hover {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.25);
+  transform: translate(-2px, -2px);
+}
+.sharp-shadow-lg:hover {
+  box-shadow: 16px 16px 0px 0px rgba(0, 0, 0, 0.25);
+  transform: translate(-2px, -2px);
+}
+.btn.sharp-shadow-sm:active {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+  transform: translate(0);
+}
+.btn.sharp-shadow-lg:active {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.25);
+  transform: translate(0);
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +127,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
