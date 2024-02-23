@@ -20,29 +20,29 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <header className="text-center py-16">
-        <h1 className={`${redHatDisplay.className} w-[79%] mx-auto mb-4`}>
+      <header className="text-center py-12 md:py-16 px-[10%]">
+        <h1 className={`${redHatDisplay.className} mx-auto mb-4`}>
           Professional Website Redesign{" "}
           <span className="text-accent">for Businesses</span>
         </h1>
-        <p className="mx-auto">
+        <p className="mx-auto text-sm sm:text-base">
           Want to get more out of your website and unlock its true potential?
           You&apos;re in the right place. Request a{" "}
           <span className="font-bold text-text-dark">free</span> website audit
           to get started now!
         </p>
-        <form className="flex gap-2 border border-black rounded-md p-2 w-fit mx-auto mt-4 sharp-shadow-sm">
+        <form className="flex flex-col sm:flex-row gap-2 border border-black rounded-md p-1 md:p-2 w-full sm:w-fit mx-auto mt-4 sharp-shadow-sm">
           <input
             type="text"
             placeholder="Your website address"
             aria-label="Your website address"
-            className="py-2 px-4 outline-none text-text-dark placeholder:text-text-mid"
+            className="py-1 md:py-2 px-2 md:px-4 outline-none rounded-md text-text-dark placeholder:text-text-mid"
           />
-          <button className="btn btn-dark px-8 py-2">
+          <button className="btn btn-dark px-4 md:px-8 py-1 md:py-2">
             Get a free website review
           </button>
         </form>
-        <span className="mt-2 inline-block">
+        <span className="mt-2 inline-block text-sm sm:text-base">
           Ready now?{" "}
           <Link href="/" className="text-accent underline font-semibold">
             Schedule a call
@@ -53,17 +53,17 @@ export default function Home() {
           </a>
         </span>
 
-        <div className="flex gap-8 w-4/5 mx-auto mt-12">
+        <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 mt-12">
           <div className="text-left">
             <span
-              className={`${redHatDisplay.className} italic text-black font-bold`}
+              className={`${redHatDisplay.className} italic text-black font-bold text-sm`}
             >
-              GET YOUR WEBSITE FROM LOOKING LIKE THIS...
+              GET YOUR WEBSITE FROM THIS...
             </span>
             <Image
               src={beforeScreenshot}
               height="auto"
-              width="500"
+              width="600"
               alt="Screenshot of website before redesign"
               className="rounded-md border border-black sharp-shadow-lg"
             />
@@ -71,14 +71,14 @@ export default function Home() {
 
           <div className="text-left">
             <span
-              className={`${redHatDisplay.className} italic text-black font-bold`}
+              className={`${redHatDisplay.className} italic text-black font-bold text-sm`}
             >
               TO THIS!
             </span>
             <Image
               src={afterScreenshot}
               height="auto"
-              width="500"
+              width="600"
               alt="Screenshot of website after redesign"
               className="rounded-md border border-black sharp-shadow-lg"
             />
@@ -86,14 +86,14 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="my-32">
-        <div className="flex gap-16 w-4/5 mx-auto">
+      <section className="my-8 lg:my-16 py-8 lg:py-16 px-4">
+        <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start gap-16 w-4/5 mx-auto">
           <Image
             src={afterScreenshot}
             height="auto"
             width="380"
             alt="Screenshot of website design"
-            className="rounded-md border border-black sharp-shadow-lg"
+            className="w-full rounded-md border border-black sharp-shadow-lg"
           />
 
           <div>
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="my-32">
+      <section className="my-8 lg:my-16 py-8 lg:py-16 px-4">
         <h2 className="text-center mb-2">Why do I even need a redesign?</h2>
         <p className="text-center mx-auto text-text-dark max-w-[40ch]">
           There is a wide range of reasons why your business website probably
@@ -127,13 +127,15 @@ export default function Home() {
                 className="mb-4"
               />
               <h4 className="mb-4">{item.title}</h4>
-              <p className="text-sm leading-[180%]">{item.description}</p>
+              <p className="text-sm leading-[180%] max-w-[40ch]">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="text-center bg-bg-dark text-text-light py-8 pb-16">
+      <section className="text-center bg-bg-dark text-text-light p-8 pb-16">
         <div className="flex justify-center mb-4">
           <Image
             src={quoteIcon}
@@ -152,18 +154,22 @@ export default function Home() {
 
       <section id="our-process" className="my-16">
         <h2 className="text-center mb-2">Our Process</h2>
-        <p className="text-center mx-auto text-text-dark mb-16">
+        <p className="text-center mx-auto text-text-dark mb-16 px-8">
           Getting you from frustrated business owner to having a high-performing
           website in <span className="font-bold">4 simple steps</span>.
         </p>
-        <div className="dynamic-grid dynamic-grid-lg w-4/5 mx-auto">
+        <div className="dynamic-grid dynamic-grid-md w-[90%] sm:w-4/5 mx-auto">
           {process.map((step) => (
-            <div key={step.id} className="flex items-start gap-4">
+            <div
+              key={step.id}
+              className="flex flex-col sm:flex-row items-start gap-4"
+            >
               <Image
                 src={step.icon.src}
                 alt={step.icon.alt}
                 height="auto"
-                width="72"
+                width="64"
+                className="w-12 md:w-16"
               />
               <div>
                 <h4 className="mb-4">{step.title}</h4>
@@ -183,7 +189,7 @@ export default function Home() {
           From ideation to delivery, our case studies take you through our
           process with real projects.
         </p>
-        <div className="flex items-start gap-8 max-w-[90%] mx-auto">
+        <div className="flex md:flex-row flex-col items-start gap-8 max-w-[90%] mx-auto">
           <div className="flex-1">
             <h4 className="mb-8">App Flowy Website Redesign</h4>
             <p className="text-sm leading-[180%] mb-4">
@@ -231,7 +237,7 @@ export default function Home() {
         <p className="text-center mx-auto text-text-dark">
           Our clients absolutely love us!
         </p>
-        <div className="dynamic-grid dynamic-grid-lg mt-16 w-4/5 mx-auto">
+        <div className="dynamic-grid dynamic-grid-md mt-16 w-[90%] sm:w-4/5 mx-auto">
           <div className="border border-black p-8 rounded-md sharp-shadow-sm">
             <p className="text-sm leading-[180%]">
               Choten Labs transformed our online presence! The redesign was
@@ -279,9 +285,9 @@ export default function Home() {
         id="pricing"
         className="border-t border-black w-full py-16 bg-bg-mid"
       >
-        <div className="flex gap-8 items-center w-4/5 mx-auto">
+        <div className="flex lg:flex-row flex-col gap-8 lg:items-center items-stretch w-[90%] sm:w-4/5 mx-auto">
           <div className="flex-[2]">
-            <p className="relative w-fit text-text-light bg-red-500 border-red-800 border-2 mb-4 font-black rounded-md px-4 py-2">
+            <p className="relative w-fit text-xs sm:text-sm md:text-base text-text-light bg-red-500 border-red-800 border-2 mb-4 font-black rounded-md px-4 py-2">
               80% off for our next 5 clients -{" "}
               <span className="underline">5 spots left!</span>
               <Image
@@ -289,7 +295,7 @@ export default function Home() {
                 alt="Sparks"
                 height="48"
                 width="auto"
-                className="absolute -right-14 -top-10 rotate-45"
+                className="absolute h-4 -right-11 -top-4 sm:h-8 sm:-right-12 sm:-top-6 rotate-45"
               />
             </p>
 
@@ -326,7 +332,7 @@ export default function Home() {
       </section>
 
       <section className="py-16 bg-bg-dark text-text-light w-full m-0">
-        <div className="flex items-center w-4/5 mx-auto gap-16">
+        <div className="flex flex-col lg:flex-row items-stretch lg:items-center w-4/5 mx-auto gap-16">
           <div className="flex-[3]">
             <h2 className="text-text-light mb-4">
               Don&apos;t leave the success of your business to chance
@@ -350,19 +356,19 @@ export default function Home() {
             width="320"
             height="auto"
             alt="Website design"
-            className="sharp-shadow-light border border-bg-dark rounded-md flex-[2]"
+            className="sharp-shadow-light border border-bg-dark rounded-md flex-[2] w-full"
           />
         </div>
       </section>
 
       <section id="faqs" className="my-16">
-        <div className="flex w-4/5 mx-auto gap-16">
+        <div className="flex flex-col md:flex-row w-4/5 mx-auto gap-8 lg:gap-16">
           <h2 className="flex-1">Frequently Asked Questions</h2>
           <FAQ />
         </div>
       </section>
 
-      <section className="py-16 bg-black text-text-light/80 text-center">
+      <section className="py-16 px-8 bg-black text-text-light/80 text-center">
         <h2 className="text-text-light max-w-[70%] mx-auto mb-4">
           By now you should have a good idea whether we&apos;re a good fit or
           not.

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-bg-light text-text-mid leading-[160%];
 }
@@ -12,15 +16,16 @@ h3,
 h4,
 h5,
 h6 {
-  @apply leading-none text-text-dark font-thin;
+  @apply leading-none text-text-dark font-bold;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 1.3444rem + 4.9307vw, 4.5rem);
+  font-size: clamp(2rem, 1.1197rem + 3.7559vw, 4.5rem);
+  @apply font-black;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 0.6333rem + 3.698vw, 3rem);
+  font-size: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
 }
 
 h3 {
@@ -35,6 +40,10 @@ p {
   @apply max-w-[60ch];
 }
 
+section {
+  scroll-margin-top: 4rem;
+}
+
 header {
   background-image: url(../public/ellipse-gradient.svg);
   background-size: cover;
@@ -45,12 +54,16 @@ header {
 .dynamic-grid {
   display: grid;
   gap: 3rem;
+  justify-items: center;
 }
 .dynamic-grid-sm {
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.dynamic-grid-md {
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
 }
 .dynamic-grid-lg {
-  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
 .nav-link {

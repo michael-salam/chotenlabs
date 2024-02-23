@@ -11,7 +11,7 @@ const FAQ = () => {
           onClick={() => setActiveFaq(0)}
           className={`${
             activeFaq === 0 && "sharp-shadow-sm"
-          } border border-black font-bold text-text-dark rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
+          } border border-black font-bold text-text-dark text-left rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
         >
           <p>What does a website redesign entail?</p>
           <p className="text-2xl">{activeFaq === 0 ? "-" : "+"}</p>
@@ -31,7 +31,7 @@ const FAQ = () => {
           onClick={() => setActiveFaq(1)}
           className={`${
             activeFaq === 1 && "sharp-shadow-sm"
-          } border border-black font-bold text-text-dark rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
+          } border border-black font-bold text-text-dark text-left rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
         >
           <p>What is not included in a Choten Labs redesign?</p>
           <p className="text-2xl">{activeFaq === 1 ? "-" : "+"}</p>
@@ -51,7 +51,7 @@ const FAQ = () => {
           onClick={() => setActiveFaq(2)}
           className={`${
             activeFaq === 2 && "sharp-shadow-sm"
-          } border border-black font-bold text-text-dark rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
+          } border border-black font-bold text-text-dark text-left rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
         >
           <p>How much does a Choten Labs redesign cost?</p>
           <p className="text-2xl">{activeFaq === 2 ? "-" : "+"}</p>
@@ -71,7 +71,7 @@ const FAQ = () => {
           onClick={() => setActiveFaq(3)}
           className={`${
             activeFaq === 3 && "sharp-shadow-sm"
-          } border border-black font-bold text-text-dark rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
+          } border border-black font-bold text-text-dark text-left rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
         >
           <p>How long will it take to redesign our website?</p>
           <p className="text-2xl">{activeFaq === 3 ? "-" : "+"}</p>
@@ -91,7 +91,7 @@ const FAQ = () => {
           onClick={() => setActiveFaq(4)}
           className={`${
             activeFaq === 4 && "sharp-shadow-sm"
-          } border border-black font-bold text-text-dark rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
+          } border border-black font-bold text-text-dark text-left rounded-md px-4 py-2 w-full flex justify-between items-center mb-4`}
         >
           <p>
             What technologies and/or platforms does Choten Labs use for

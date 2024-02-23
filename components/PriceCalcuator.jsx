@@ -28,7 +28,7 @@ const PriceCalcuator = () => {
   }, [pageNumberRange, styleOfDesign, copywritingDoneForYou]);
 
   return (
-    <div className="bg-bg-dark p-8 rounded-md text-text-light flex-1 sharp-shadow-lg">
+    <div className="bg-bg-dark p-4 sm:p-8 rounded-md text-text-light flex-1 sharp-shadow-lg">
       <div className="mb-8">
         <span className="font-bold">Number of pages</span>
         <div className="flex gap-4 items-center mt-2">
@@ -38,7 +38,7 @@ const PriceCalcuator = () => {
               pageNumberRange === "1-5"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
-            } btn btn-light border`}
+            } btn btn-light border text-sm sm:text-base`}
           >
             1-5
           </button>
@@ -48,7 +48,7 @@ const PriceCalcuator = () => {
               pageNumberRange === "6-10"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
-            } btn btn-light border`}
+            } btn btn-light border text-sm sm:text-base`}
           >
             6-10
           </button>
@@ -58,7 +58,7 @@ const PriceCalcuator = () => {
               pageNumberRange === "10-15"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
-            } btn btn-light border`}
+            } btn btn-light border text-sm sm:text-base`}
           >
             10-15
           </button>
@@ -73,7 +73,7 @@ const PriceCalcuator = () => {
               styleOfDesign === "standard"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
-            } btn btn-light border`}
+            } btn btn-light border text-sm sm:text-base`}
           >
             Standard
           </button>
@@ -83,7 +83,7 @@ const PriceCalcuator = () => {
               styleOfDesign === "high-end"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
-            } btn btn-light border`}
+            } btn btn-light border text-sm sm:text-base`}
           >
             High-end
           </button>
@@ -98,7 +98,7 @@ const PriceCalcuator = () => {
               copywritingDoneForYou === "no"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
-            } btn btn-light border`}
+            } btn btn-light border text-sm sm:text-base`}
           >
             No
           </button>
@@ -108,7 +108,7 @@ const PriceCalcuator = () => {
               copywritingDoneForYou === "yes"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
-            } btn btn-light border`}
+            } btn btn-light border text-sm sm:text-base`}
           >
             Yes
           </button>
