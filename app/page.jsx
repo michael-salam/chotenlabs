@@ -208,7 +208,7 @@ export default function Home() {
               improving speed, implementing a mobile-first approach, and
               enhancing the overall user experience. Through collaborative
               discussions, we agreed on project terms that aligned with ABC
-              E-commerce's business goals and budget.
+              E-commerce&apos;s business goals and budget.
             </p>
           </div>
           <BeforeAfter />
@@ -219,9 +219,9 @@ export default function Home() {
               times but also implemented a responsive design for seamless
               shopping experiences on various devices. Conversion rates saw a
               remarkable increase of 25%, contributing to a substantial boost in
-              online sales. ABC E-commerce's enhanced online presence positioned
-              them as a more competitive player in the e-commerce market,
-              driving customer satisfaction and loyalty.
+              online sales. ABC E-commerce&apos;s enhanced online presence
+              positioned them as a more competitive player in the e-commerce
+              market, driving customer satisfaction and loyalty.
             </p>
           </div>
         </div>
@@ -252,10 +252,10 @@ export default function Home() {
           <div className="border border-black p-8 rounded-md sharp-shadow-sm">
             <p className="text-sm leading-[180%]">
               Incredible results! Choten Labs breathed new life into our
-              outdated website. Their team's creativity and strategic approach
-              made the redesign process smooth. Our site now reflects our brand
-              perfectly, and we're already seeing increased traffic. Thank you,
-              Choten Labs!
+              outdated website. Their team&apos;s creativity and strategic
+              approach made the redesign process smooth. Our site now reflects
+              our brand perfectly, and we&apos;re already seeing increased
+              traffic. Thank you, Choten Labs!
             </p>
             <p className="text-text-dark font-bold italic mt-4">
               Sam Keith - ABC Services
