@@ -9,10 +9,10 @@ import BeforeAfter from "@/components/BeforeAfter";
 import PriceCalcuator from "@/components/PriceCalcuator";
 import FAQ from "@/components/FAQ";
 // images
-import beforeScreenshot from "@/public/before.png";
-import afterScreenshot from "@/public/after.png";
-import quoteIcon from "@/public/quote.svg";
-import sparks from "@/public/sparks.svg";
+import beforeScreenshot from "@/public/images/before.png";
+import afterScreenshot from "@/public/images/after.png";
+import quoteIcon from "@/public/images/quote.svg";
+import sparks from "@/public/images/sparks.svg";
 // data
 import { whyRedesign, process } from "@/data";
 

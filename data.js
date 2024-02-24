@@ -1,15 +1,15 @@
 // for why redesign
-import outdatedIcon from "@/public/outdated.svg";
-import mobileIcon from "@/public/mobile.svg";
-import userIcon from "@/public/user.svg";
-import speedIcon from "@/public/speed.svg";
-import securityIcon from "@/public/security.svg";
-import seoIcon from "@/public/seo.svg";
+import outdatedIcon from "@/public/images/outdated.svg";
+import mobileIcon from "@/public/images/mobile.svg";
+import userIcon from "@/public/images/user.svg";
+import speedIcon from "@/public/images/speed.svg";
+import securityIcon from "@/public/images/security.svg";
+import seoIcon from "@/public/images/seo.svg";
 // for process
-import oneIcon from "@/public/one.svg";
-import twoIcon from "@/public/two.svg";
-import threeIcon from "@/public/three.svg";
-import fourIcon from "@/public/four.svg";
+import oneIcon from "@/public/images/one.svg";
+import twoIcon from "@/public/images/two.svg";
+import threeIcon from "@/public/images/three.svg";
+import fourIcon from "@/public/images/four.svg";
 
 export const whyRedesign = [
   {

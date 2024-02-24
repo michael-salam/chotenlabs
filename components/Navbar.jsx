@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Red_Hat_Display } from "next/font/google";
 const redHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 // images
-import logo from "@/public/chotenlabs.svg";
+import logo from "@/public/images/chotenlabs.svg";
 import { useState } from "react";
 
 const Navbar = () => {
