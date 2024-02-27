@@ -67,7 +67,7 @@ const Navbar = () => {
         href="/"
         className={`${redHatDisplay.className} hidden md:block btn btn-dark sharp-shadow-sm text-sm px-4 py-2`}
       >
-        Get a free website review
+        Apply for a redesign
       </Link>
 
       <button

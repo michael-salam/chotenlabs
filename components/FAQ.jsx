@@ -71,6 +71,7 @@ const FAQ = () => {
             <ul className="list-disc list-inside">
               <li>E-commerce integration</li>
               <li>CMS integration</li>
+              <li>Chatbot integration</li>
               <li>Backend development</li>
               <li>Off-page seo</li>
               <li>Website maintenance</li>

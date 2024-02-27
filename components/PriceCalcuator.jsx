@@ -144,7 +144,7 @@ const PriceCalcuator = () => {
         href="/"
         className="btn bg-bg-light sharp-shadow-light border border-bg-dark text-bg-dark px-4 py-3 sharp-shadow block text-center"
       >
-        Let&apos;s get to work!
+        Get started with your redesign
       </Link>
     </div>
   );

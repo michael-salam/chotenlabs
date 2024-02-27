@@ -20,7 +20,7 @@ export const whyRedesign = [
     },
     title: "Outdated Design",
     description:
-      "An outdated design can create a negative impression and may lead visitors to perceive the business as behind the times. A modern and visually appealing design helps maintain a positive image.",
+      "If a visitor feels like your website looks like one that was created years ago (even if it was), you definitely need a redesign.",
   },
   {
     id: 1,
@@ -28,9 +28,9 @@ export const whyRedesign = [
       src: mobileIcon,
       alt: "Mobile phone with checkmark",
     },
-    title: "Mobile Responsiveness",
+    title: "Poor Mobile Experience",
     description:
-      "With the increasing use of smartphones, a mobile-friendly website is crucial. If a website is not responsive, it can result in a poor user experience for mobile users, impacting both usability and search engine rankings.",
+      "Your website looks and works okay on desktop, but the mobile experience is a nightmare. Yes? A redesign is for you.",
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ export const whyRedesign = [
     },
     title: "User Experience (UX) issues",
     description:
-      "If users find it challenging to navigate the site or encounter issues like broken links, it's essential to address these problems through a redesign to enhance the overall user experience.",
+      "If visitors find it challenging to navigate your site or encounter issues like broken links, it's time for a redesign.",
   },
   {
     id: 3,
@@ -48,9 +48,9 @@ export const whyRedesign = [
       src: speedIcon,
       alt: "Speedometer",
     },
-    title: "Loading Speed",
+    title: "Slow Loading Speed",
     description:
-      "Slow-loading websites can lead to high bounce rates. Optimizing the website for faster loading times is crucial for retaining visitors and improving search engine rankings.",
+      "Your website takes ages to load. That's dangerous. You need to be considering a redesign so visitors don't abandon you in frustration.",
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ export const whyRedesign = [
     },
     title: "Security Concerns",
     description:
-      "Outdated websites may be vulnerable to security threats. A redesign can involve updating security protocols and implementing the latest technologies to protect against potential risks.",
+      "See that padlock icon in the address bar? If your website doesn't have it, there's a problem. You ain't secure!",
   },
   {
     id: 5,
@@ -68,9 +68,9 @@ export const whyRedesign = [
       src: seoIcon,
       alt: "Laptop with magnifying glass",
     },
-    title: "Search Engine Optimisation (SEO)",
+    title: "No Search Engine Optimisation (SEO)",
     description:
-      "To maintain or improve search engine rankings, a website must adhere to the latest SEO best practices. Regular updates and a well-optimized site contribute to better visibility in search results.",
+      "Your website appears on the 100th page of a Google search. Exaggeration? Maybe not. You need to improve your SEO.",
   },
 ];
 
@@ -83,7 +83,7 @@ export const process = [
     },
     title: "Full website audit",
     description:
-      "Uncover the potential of your online presence with our comprehensive website audit. We analyze every aspect of your current site to identify strengths, weaknesses, and opportunities for improvement.",
+      "We analyze every aspect of your current site to identify strengths, weaknesses, and opportunities for improvement.",
   },
   {
     id: 1,
@@ -93,7 +93,7 @@ export const process = [
     },
     title: "Deliver slide deck",
     description:
-      "Dive into the vision for your redesigned website with our engaging slide deck. This visual presentation outlines proposed design concepts, functionality upgrades, and strategic recommendations, providing a clear roadmap for your website transformation.",
+      "Once we know exactly what needs to be improved, we let you know via a visual presentation that outlines clear roadmap for your website transformation.",
   },
   {
     id: 2,
@@ -103,7 +103,7 @@ export const process = [
     },
     title: "Agree project terms",
     description:
-      "Streamline the journey to a revamped website by agreeing on project terms. Our transparent process ensures clarity on timelines, deliverables, and investment, paving the way for a collaborative and stress-free redesign experience.",
+      "Like what you see? Then we can work together! We establish clarity on timelines, deliverables, and investment, paving the way for a collaborative and stress-free redesign experience.",
   },
   {
     id: 3,
@@ -113,7 +113,7 @@ export const process = [
     },
     title: "Deliver Website",
     description:
-      "Witness your vision come to life as we deliver your transformed website. From sleek design elements to enhanced functionality, our team ensures a seamless transition, empowering your online presence to captivate and engage your target audience.",
+      "We deliver a fully functional website that aligns with your unique business goals, while keeping in constant communication throughout the process. You'll never lose touch.",
   },
 ];
 

@@ -12,7 +12,8 @@ import FAQ from "@/components/FAQ";
 import beforeScreenshot from "@/public/images/before.png";
 import afterScreenshot from "@/public/images/after.png";
 import quoteIcon from "@/public/images/quote.svg";
-import sparks from "@/public/images/sparks.svg";
+import stat from "@/public/images/stat.svg";
+import emailIcon from "@/public/images/email.svg";
 // data
 import { whyRedesign, process } from "@/data";
 import AvailableSpots from "@/components/AvailableSpots";
@@ -22,12 +23,20 @@ export default function Home() {
     <>
       <Navbar />
       <header className="text-center py-12 md:py-16 px-[10%]">
-        <a href="#pricing" className="flex justify-center">
-          <AvailableSpots />
-        </a>
+        <div className="flex justify-center">
+          <a href="#pricing">
+            <AvailableSpots />
+          </a>
+        </div>
+
         <h1 className={`${redHatDisplay.className} mx-auto mb-4`}>
           Professional Website Redesign{" "}
-          <span className="text-accent">for Businesses</span>
+          <span className="relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 lg:after:h-6 after:w-full after:-z-10 after:bg-accent/40">
+            for{" "}
+          </span>
+          <span className="relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 lg:after:h-6 after:w-full after:-z-10 after:bg-accent/40">
+            Businesses
+          </span>
         </h1>
         <p className="mx-auto text-sm sm:text-base">
           Want to get more out of your website and unlock its true potential?
@@ -46,15 +55,11 @@ export default function Home() {
             Get a free website review
           </button>
         </form>
-        <span className="mt-2 inline-block text-sm sm:text-base">
+        <span className="mt-2 inline-block text-sm">
           Ready now?{" "}
           <Link href="/" className="text-accent underline font-semibold">
-            Schedule a call
-          </Link>{" "}
-          or{" "}
-          <a href="#pricing" className="text-accent underline font-semibold">
-            Use our price calculator
-          </a>
+            Apply for a redesign
+          </Link>
         </span>
 
         <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 mt-12">
@@ -90,35 +95,40 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="my-8 lg:my-16 py-8 lg:py-16 px-4">
-        <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start gap-16 w-4/5 mx-auto">
+      <section className="py-16 px-4 border-y border-black bg-bg-mid">
+        <div className="flex flex-col text-center lg:text-left justify-center items-center lg:flex-row lg:items-start lg:gap-16 w-4/5 mx-auto">
           <Image
-            src={afterScreenshot}
-            height="auto"
-            width="380"
+            src={stat}
+            height="200"
+            width="200"
             alt="Screenshot of website design"
-            className="w-full rounded-md border border-black sharp-shadow-lg"
           />
 
-          <div>
+          <div className="sm:w-4/5 md:w-2/3 lg:w-1/2">
             <h2 className={`${redHatDisplay.className} mb-8`}>
-              Your Website Holds More Potential than you Realise
+              Don't be just another number
             </h2>
             <p className="mb-4">
-              Your existing website is a mess. Well, maybe not a MESS, but there
-              is a reason you are here. As important as a website is, it is
-              useless if it does not communicate your brand effectively.
+              Of the{" "}
+              <span className="font-bold text-text-dark">
+                2 billion websites on the internet
+              </span>
+              , there are about{" "}
+              <span className="font-bold text-text-dark">
+                400 million active websites
+              </span>
+              . Yes, you read that right.
             </p>
-            <p>It&apos;s about time you changed that.</p>
+            <p>You need to stand out, and we can help you do just that.</p>
           </div>
         </div>
       </section>
 
-      <section className="my-8 lg:my-16 py-8 lg:py-16 px-4">
-        <h2 className="text-center mb-2">Why do I even need a redesign?</h2>
+      <section className="py-16 px-4 border-b border-black">
+        <h2 className="text-center mb-2">Do I need a redesign?</h2>
         <p className="text-center mx-auto text-text-dark max-w-[40ch]">
           There is a wide range of reasons why your business website probably
-          needs to be redesigned.
+          needs to be redesigned, including:
         </p>
         <div className="dynamic-grid dynamic-grid-sm mt-16 w-4/5 mx-auto">
           {whyRedesign.map((item) => (
@@ -134,6 +144,37 @@ export default function Home() {
               <p className="text-sm leading-[180%] max-w-[40ch]">
                 {item.description}
               </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="our-process" className="py-16 bg-bg-mid">
+        <h2 className="text-center mb-2">Our Process</h2>
+        <p className="text-center mx-auto text-text-dark mb-16 px-8">
+          If you reckon that you do need a redesign, we can solve all those
+          problems for you and more in{" "}
+          <span className="font-bold">4 simple steps</span>
+        </p>
+        <div className="dynamic-grid dynamic-grid-md w-[90%] sm:w-4/5 mx-auto">
+          {process.map((step) => (
+            <div
+              key={step.id}
+              className="flex flex-col sm:flex-row items-start gap-4"
+            >
+              <Image
+                src={step.icon.src}
+                alt={step.icon.alt}
+                height="auto"
+                width="64"
+                className="w-12 md:w-16"
+              />
+              <div>
+                <h4 className="mb-4">{step.title}</h4>
+                <p className="text-sm leading-[180%] max-w-[40ch]">
+                  {step.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -156,42 +197,13 @@ export default function Home() {
         <span className="mt-4 text-xl font-bold">Leonard Hampton</span>
       </section>
 
-      <section id="our-process" className="my-16">
-        <h2 className="text-center mb-2">Our Process</h2>
-        <p className="text-center mx-auto text-text-dark mb-16 px-8">
-          Getting you from frustrated business owner to having a high-performing
-          website in <span className="font-bold">4 simple steps</span>.
-        </p>
-        <div className="dynamic-grid dynamic-grid-md w-[90%] sm:w-4/5 mx-auto">
-          {process.map((step) => (
-            <div
-              key={step.id}
-              className="flex flex-col sm:flex-row items-start gap-4"
-            >
-              <Image
-                src={step.icon.src}
-                alt={step.icon.alt}
-                height="auto"
-                width="64"
-                className="w-12 md:w-16"
-              />
-              <div>
-                <h4 className="mb-4">{step.title}</h4>
-                <p className="text-sm leading-[180%]">{step.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section
         id="case-studies"
-        className="bg-bg-mid border-y border-black w-full py-16 my-16"
+        className="bg-bg-mid border-y border-black w-full py-16"
       >
         <h2 className="text-center mb-2">Case Studies</h2>
-        <p className="text-text-dark text-center mx-auto mb-16">
-          From ideation to delivery, our case studies take you through our
-          process with real projects.
+        <p className="text-text-dark text-center mx-auto mb-16 px-8">
+          Check out how we approach redesigns, step by step
         </p>
         <div className="flex md:flex-row flex-col items-start gap-8 max-w-[90%] mx-auto">
           <div className="flex-1">
@@ -315,8 +327,8 @@ export default function Home() {
             <div className="text-sm">
               <p className="font-bold text-text-dark">Note:</p>
               <p className="max-w-[40ch]">
-                A custom quote will be required if your website has 15+ pages, a
-                database, e-commerce, or CMS integrations.
+                A custom quote will be required if your website has 15+ pages or
+                chatbot, database, e-commerce, or CMS integrations.
               </p>
             </div>
           </div>
@@ -328,20 +340,20 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-stretch lg:items-center w-4/5 mx-auto gap-16">
           <div className="flex-[3]">
             <h2 className="text-text-light mb-4">
-              Don&apos;t leave the success of your business to chance
+              Don&apos;t let a poor website hold your business back
             </h2>
-            <p className="opacity-80 mb-12">
-              Lorem ipsum dolor sit amet consectetur. Elementum consequat
-              volutpat ac erat augue ut curabitur. Pharetra aliquet convallis
-              egestas egestas non. Enim consequat vitae tellus nunc tellus
-              elementum sit tempor eleifend. Amet et accumsan nunc volutpat nec
-              odio in.
+            <p className="opacity-80 mb-4">
+              A great website has the potential to create a lasting impression
+              on your visitors and potential customers, sell your products and
+              services effectively, and ultimately increase your business
+              revenue.
             </p>
+            <p className="opacity-80 mb-8">A mediocre website, not so much.</p>
             <Link
               href="/"
-              className="border border-black btn bg-bg-light text-bg-dark px-8 py-4 sharp-shadow-light"
+              className="border border-black btn bg-bg-light text-bg-dark px-8 py-2 sharp-shadow-light inline-block"
             >
-              Request free audit
+              Apply for a redesign
             </Link>
           </div>
           <Image
@@ -367,22 +379,34 @@ export default function Home() {
           not.
         </h2>
         <p className="mb-8 mx-auto">
-          If so, what are you waiting for? Click the button below to transform
-          your website immediately!
+          If so, what are you waiting for? Click the button below to apply for a
+          website redesign immediately!
         </p>
         <Link
           href="/"
-          className="mb-4 btn bg-bg-light text-bg-dark px-8 py-4 sharp-shadow-light border border-black inline-block"
+          className="mb-4 btn bg-bg-light text-bg-dark px-8 py-2 sharp-shadow-light border border-black inline-block"
         >
-          Transform my website
+          Apply for a redesign
         </Link>
         <p className="text-sm mx-auto">
           Still need more clarity?{" "}
           <Link href="/" className="underline">
-            Schedule a call with us now.
+            Get a free website review
           </Link>
+          .
         </p>
       </section>
+
+      <footer className="p-4 flex justify-between items-center">
+        <span>&copy; ChotenLabs 2024</span>
+        <a
+          href="mailto:chotencreativelabs@gmail.com"
+          className="underline flex items-center gap-2"
+        >
+          <Image src={emailIcon} height="24" width="24" alt="Envelope" />
+          <span>chotencreativelabs@gmail.com</span>
+        </a>
+      </footer>
     </>
   );
 }
