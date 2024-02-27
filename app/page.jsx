@@ -15,12 +15,16 @@ import quoteIcon from "@/public/images/quote.svg";
 import sparks from "@/public/images/sparks.svg";
 // data
 import { whyRedesign, process } from "@/data";
+import AvailableSpots from "@/components/AvailableSpots";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <header className="text-center py-12 md:py-16 px-[10%]">
+        <a href="#pricing" className="flex justify-center">
+          <AvailableSpots />
+        </a>
         <h1 className={`${redHatDisplay.className} mx-auto mb-4`}>
           Professional Website Redesign{" "}
           <span className="text-accent">for Businesses</span>
@@ -287,18 +291,7 @@ export default function Home() {
       >
         <div className="flex lg:flex-row flex-col gap-8 lg:items-center items-stretch w-[90%] sm:w-4/5 mx-auto">
           <div className="flex-[2]">
-            <p className="relative w-fit text-xs sm:text-sm md:text-base text-text-light bg-red-500 border-red-800 border-2 mb-4 font-black rounded-md px-4 py-2">
-              80% off for our next 5 clients -{" "}
-              <span className="underline">5 spots left!</span>
-              <Image
-                src={sparks}
-                alt="Sparks"
-                height="48"
-                width="auto"
-                className="absolute h-4 -right-11 -top-4 sm:h-8 sm:-right-12 sm:-top-6 rotate-45"
-              />
-            </p>
-
+            <AvailableSpots />
             <h2 className="font-normal mb-4">
               <span className="text-accent">
                 Business Class Website Redesigns,
