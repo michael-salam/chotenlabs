@@ -2,7 +2,7 @@ const bookedClients = 0;
 
 const AvailableSpots = () => {
   return (
-    <div className="flex items-center gap-4 w-fit text-sm text-bg-dark bg-red-200 border-red-600 border mb-8 font-bold rounded-md px-4 py-2">
+    <div className="flex flex-col sm:flex-row items-center justify-center text-left sm:gap-4 w-fit text-sm text-bg-dark bg-red-200 border-red-600 border mb-8 font-bold rounded-md px-4 py-2">
       <span>80% off for our next 5 clients</span>
       <div className="flex items-center gap-4">
         <span className="text-xs font-semibold">

@@ -91,7 +91,7 @@ const FAQ = () => {
         </button>
         {activeFaq === 3 && (
           <div className="text-sm max-w-[60ch] leading-[180%]">
-            A website redesign from ChotenLabs starts at $1,995
+            A standard website redesign from ChotenLabs starts at $1,995
           </div>
         )}
       </div>

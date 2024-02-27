@@ -1,30 +1,44 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+import loadingSpinner from "@/public/images/loading-spinner.svg";
+
 const PriceCalcuator = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [pageNumberRange, setPageNumberRange] = useState("1-5");
   const [styleOfDesign, setStyleOfDesign] = useState("standard");
   const [copywritingDoneForYou, setCopywritingDoneForYou] = useState("no");
   const [totalCost, setTotalCost] = useState(0);
 
   useEffect(() => {
-    if (pageNumberRange === "1-5") {
-      setTotalCost(1995);
-    }
-    if (pageNumberRange === "6-10") {
-      setTotalCost(2295);
-    }
-    if (pageNumberRange === "10-15") {
-      setTotalCost(2595);
-    }
-    if (styleOfDesign === "high-end") {
-      setTotalCost((prev) => prev + 500);
-    }
-    if (copywritingDoneForYou === "yes") {
-      setTotalCost((prev) => prev + 200);
-    }
+    setTimeout(() => {
+      if (pageNumberRange === "1-5") {
+        setTotalCost(1995);
+      }
+      if (pageNumberRange === "6-10") {
+        setTotalCost(2295);
+      }
+      if (pageNumberRange === "10-15") {
+        setTotalCost(2595);
+      }
+      if (styleOfDesign === "high-end") {
+        setTotalCost((prev) => prev + 500);
+      }
+      if (copywritingDoneForYou === "yes") {
+        setTotalCost((prev) => prev + 200);
+      }
+    }, 1000);
+  }, [pageNumberRange, styleOfDesign, copywritingDoneForYou]);
+
+  // useEffect to handle loading animation
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
   }, [pageNumberRange, styleOfDesign, copywritingDoneForYou]);
 
   return (
@@ -118,6 +132,13 @@ const PriceCalcuator = () => {
       <div className="mb-4 flex items-center gap-4 text-4xl">
         <p className="opacity-40 line-through">${totalCost}</p>
         <p className="opacity-80 font-bold">${totalCost * 0.2}</p>
+        <Image
+          src={loadingSpinner}
+          height="32"
+          width="32"
+          alt="Loading spinner"
+          className={`${isLoading ? "animate-spin block" : "hidden"} ml-auto`}
+        />
       </div>
       <Link
         href="/"

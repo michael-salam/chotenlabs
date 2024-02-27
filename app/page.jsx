@@ -35,7 +35,7 @@ export default function Home() {
           <span className="font-bold text-text-dark">free</span> website audit
           to get started now!
         </p>
-        <form className="flex flex-col sm:flex-row gap-2 border border-black rounded-md p-1 md:p-2 w-full sm:w-fit mx-auto mt-4 sharp-shadow-sm">
+        <form className="flex flex-col sm:flex-row gap-2 border border-black bg-bg-light rounded-md p-1 md:p-2 w-full sm:w-fit mx-auto mt-4 sharp-shadow-sm">
           <input
             type="text"
             placeholder="Your website address"
