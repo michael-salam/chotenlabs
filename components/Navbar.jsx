@@ -69,8 +69,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/" className="text-base underline">
-              Get a free website audit
+            <Link href="/" className="text-base">
+              <span className="block">Or</span>
+              <span className="block underline">Get a free website audit</span>
             </Link>
           </li>
         </ul>

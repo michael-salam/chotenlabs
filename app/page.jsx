@@ -397,7 +397,7 @@ export default function Home() {
         </p>
       </section>
 
-      <footer className="p-4 flex justify-between items-center">
+      <footer className="p-4 flex flex-wrap justify-between items-center">
         <span>&copy; ChotenLabs 2024</span>
         <a
           href="mailto:chotencreativelabs@gmail.com"
