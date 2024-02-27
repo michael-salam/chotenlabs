@@ -106,7 +106,7 @@ export default function Home() {
 
           <div className="sm:w-4/5 md:w-2/3 lg:w-1/2">
             <h2 className={`${redHatDisplay.className} mb-8`}>
-              Don't be just another number
+              Don&apos;t be just another number
             </h2>
             <p className="mb-4">
               Of the{" "}

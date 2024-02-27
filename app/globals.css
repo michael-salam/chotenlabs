@@ -124,7 +124,6 @@ header {
 @keyframes pulse {
   to {
     opacity: 0;
-    scale: 1.2;
   }
 }
 

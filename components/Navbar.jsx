@@ -60,6 +60,19 @@ const Navbar = () => {
               FAQs
             </a>
           </li>
+          <li className="mt-8">
+            <Link
+              href="/"
+              className={`${redHatDisplay.className} btn bg-white text-bg-dark px-4 py-2 sharp-shadow-light text-base`}
+            >
+              Apply for a redesign
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="text-base underline">
+              Get a free website audit
+            </Link>
+          </li>
         </ul>
       )}
 
