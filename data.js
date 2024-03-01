@@ -83,7 +83,7 @@ export const process = [
     },
     title: "Full website audit",
     description:
-      "We analyze every aspect of your current site to identify strengths, weaknesses, and opportunities for improvement.",
+      "We analyze every aspect of your current site to identify strengths, weaknesses, and opportunities for improvement to come up with a strategy.",
   },
   {
     id: 1,
@@ -91,9 +91,9 @@ export const process = [
       src: twoIcon,
       alt: "Two",
     },
-    title: "Deliver slide deck",
+    title: "UI/UX Redesign",
     description:
-      "Once we know exactly what needs to be improved, we let you know via a visual presentation that outlines clear roadmap for your website transformation.",
+      "Once we know exactly what needs to be improved, we start by redesigning the user interface and experience of your website.",
   },
   {
     id: 2,
@@ -101,9 +101,9 @@ export const process = [
       src: threeIcon,
       alt: "Three",
     },
-    title: "Agree project terms",
+    title: "Website Development (Optional)",
     description:
-      "Like what you see? Then we can work together! We establish clarity on timelines, deliverables, and investment, paving the way for a collaborative and stress-free redesign experience.",
+      "Once we design a new user interface for your website, you can choose to go ahead to develop it yourself, or work with us to bring it to life.",
   },
   {
     id: 3,
@@ -111,9 +111,9 @@ export const process = [
       src: fourIcon,
       alt: "Four",
     },
-    title: "Deliver Website",
+    title: "Post-Launch support",
     description:
-      "We deliver a fully functional website that aligns with your unique business goals, while keeping in constant communication throughout the process. You'll never lose touch.",
+      "If you choose to carry on with us, we deliver a fully functional website and provide training as well as free 30 days post-launch support to your business.",
   },
 ];
 

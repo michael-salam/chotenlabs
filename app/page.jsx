@@ -9,8 +9,8 @@ import BeforeAfter from "@/components/BeforeAfter";
 import PriceCalcuator from "@/components/PriceCalcuator";
 import FAQ from "@/components/FAQ";
 // images
-import beforeScreenshot from "@/public/images/before.png";
-import afterScreenshot from "@/public/images/after.png";
+import beforeScreenshot from "@/public/images/brandboosthub-before-sm.jpg";
+import afterScreenshot from "@/public/images/brandboosthub-after-sm.jpg";
 import quoteIcon from "@/public/images/quote.svg";
 import stat from "@/public/images/stat.svg";
 import emailIcon from "@/public/images/email.svg";
@@ -310,15 +310,18 @@ export default function Home() {
               </span>{" "}
               <br />
               Starting at <span className="line-through opacity-40">
-                $1995
+                $995
               </span>{" "}
-              $399
+              $199
             </h2>
             <p>Use our redesign pricing calculator to get an estimate.</p>
             <div className="text-sm mt-8 mb-4">
               <p className="font-bold text-text-dark">Guaranteed:</p>
+              <p className="my-2 max-w-[40ch]">
+                If you decide to also develop your website with us, we guarantee
+              </p>
               <ul className="list-disc list-inside">
-                <li>Responsive (mobile-friendly) design</li>
+                <li>A responsive (mobile-friendly) website</li>
                 <li>On-page SEO</li>
                 <li>Custom website (no templates)</li>
                 <li>Google Analytics setup</li>
@@ -340,7 +343,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-stretch lg:items-center w-4/5 mx-auto gap-16">
           <div className="flex-[3]">
             <h2 className="text-text-light mb-4">
-              Don&apos;t let a poor website hold your business back
+              Don&apos;t let poor website design hold your business back
             </h2>
             <p className="opacity-80 mb-4">
               A great website has the potential to create a lasting impression
@@ -397,7 +400,7 @@ export default function Home() {
         </p>
       </section>
 
-      <footer className="p-4 flex flex-wrap justify-between items-center">
+      <footer className="p-4 flex sm:flex-row flex-col justify-between items-center">
         <span>&copy; ChotenLabs 2024</span>
         <a
           href="mailto:chotencreativelabs@gmail.com"

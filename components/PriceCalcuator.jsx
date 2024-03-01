@@ -10,28 +10,28 @@ const PriceCalcuator = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [pageNumberRange, setPageNumberRange] = useState("1-5");
   const [styleOfDesign, setStyleOfDesign] = useState("standard");
-  const [copywritingDoneForYou, setCopywritingDoneForYou] = useState("no");
+  const [includeDevelopment, setIncludeDevelopment] = useState("no");
   const [totalCost, setTotalCost] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
       if (pageNumberRange === "1-5") {
-        setTotalCost(1995);
+        setTotalCost(995);
       }
       if (pageNumberRange === "6-10") {
-        setTotalCost(2295);
+        setTotalCost(1195);
       }
       if (pageNumberRange === "10-15") {
-        setTotalCost(2595);
+        setTotalCost(1395);
       }
       if (styleOfDesign === "high-end") {
-        setTotalCost((prev) => prev + 500);
+        setTotalCost((prev) => prev + 300);
       }
-      if (copywritingDoneForYou === "yes") {
-        setTotalCost((prev) => prev + 200);
+      if (includeDevelopment === "yes") {
+        setTotalCost((prev) => prev + 1000);
       }
     }, 1000);
-  }, [pageNumberRange, styleOfDesign, copywritingDoneForYou]);
+  }, [pageNumberRange, styleOfDesign, includeDevelopment]);
 
   // useEffect to handle loading animation
   useEffect(() => {
@@ -39,7 +39,7 @@ const PriceCalcuator = () => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-  }, [pageNumberRange, styleOfDesign, copywritingDoneForYou]);
+  }, [pageNumberRange, styleOfDesign, includeDevelopment]);
 
   return (
     <div className="bg-bg-dark p-4 sm:p-8 rounded-md text-text-light flex-1 sharp-shadow-lg">
@@ -104,12 +104,12 @@ const PriceCalcuator = () => {
         </div>
       </div>
       <div className="mb-12">
-        <span className="font-bold">Copywriting done for you</span>
+        <span className="font-bold">Include development</span>
         <div className="flex gap-4 items-center mt-2">
           <button
-            onClick={() => setCopywritingDoneForYou("no")}
+            onClick={() => setIncludeDevelopment("no")}
             className={`${
-              copywritingDoneForYou === "no"
+              includeDevelopment === "no"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
             } btn btn-light border text-sm sm:text-base`}
@@ -117,9 +117,9 @@ const PriceCalcuator = () => {
             No
           </button>
           <button
-            onClick={() => setCopywritingDoneForYou("yes")}
+            onClick={() => setIncludeDevelopment("yes")}
             className={`${
-              copywritingDoneForYou === "yes"
+              includeDevelopment === "yes"
                 ? "sharp-shadow-light border-bg-dark opacity-100 font-black"
                 : "border-bg-light opacity-80"
             } btn btn-light border text-sm sm:text-base`}

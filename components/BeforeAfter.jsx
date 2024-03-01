@@ -4,8 +4,8 @@ import { useState } from "react";
 
 import Image from "next/image";
 // images
-import before from "@/public/images/before.png";
-import after from "@/public/images/jentex-landing-page.png";
+import before from "@/public/images/brandboosthub-before-lg.jpg";
+import after from "@/public/images/brandboosthub-after-lg.jpg";
 
 const BeforeAfter = () => {
   const [activeTab, setActiveTab] = useState("before");
