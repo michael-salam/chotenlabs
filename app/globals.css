@@ -73,21 +73,6 @@ header {
   animation: pulse 1s ease-out alternate infinite;
 }
 
-.dynamic-grid {
-  display: grid;
-  gap: 3rem;
-  justify-items: center;
-}
-.dynamic-grid-sm {
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-}
-.dynamic-grid-md {
-  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
-}
-.dynamic-grid-lg {
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-}
-
 .nav-link {
   @apply hover:text-text-dark hover:font-semibold transition-colors;
 }

@@ -121,7 +121,7 @@ export default function Home() {
           There is a wide range of reasons why your business website probably
           needs to be redesigned, including:
         </p>
-        <div className="dynamic-grid dynamic-grid-sm mt-16 w-4/5 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8 mt-16 w-4/5 mx-auto">
           {whyRedesign.map((item) => (
             <div key={item.id}>
               <Image
@@ -129,7 +129,7 @@ export default function Home() {
                 alt={item.icon.alt}
                 height="48"
                 width="auto"
-                className="mb-4"
+                className="mb-4 col-span-1"
               />
               <h4 className="mb-4">{item.title}</h4>
               <p className="text-sm leading-[180%] max-w-[40ch]">
@@ -147,11 +147,11 @@ export default function Home() {
           problems for you and more in{" "}
           <span className="font-bold">4 simple steps</span>
         </p>
-        <div className="dynamic-grid dynamic-grid-md w-[90%] sm:w-4/5 mx-auto">
+        <div className="grid grid-cols-1 place-items-center lg:grid-cols-2 gap-8 w-[90%] px-4 sm:w-[75%] mx-auto">
           {process.map((step) => (
             <div
               key={step.id}
-              className="flex flex-col sm:flex-row items-start gap-4"
+              className="flex flex-col col-span-1 sm:flex-row items-start gap-4"
             >
               <Image
                 src={step.icon.src}
@@ -244,9 +244,9 @@ export default function Home() {
         <p className="text-center mx-auto text-text-dark">
           Our clients absolutely love us!
         </p>
-        <div className="dynamic-grid dynamic-grid-md mt-16 w-[90%] sm:w-4/5 mx-auto">
-          <div className="border border-black p-8 rounded-md sharp-shadow-sm">
-            <p className="text-sm leading-[180%]">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 mt-8 md:mt-16 w-[90%] sm:w-4/5 mx-auto">
+          <div className="border border-black p-8 rounded-md sharp-shadow-sm sm:w-4/5 md:w-full mx-auto">
+            <p className="text-sm leading-[180%] max-w-[40ch]">
               Choten Labs transformed our online presence! The redesign was
               seamless, and their attention to detail surpassed our
               expectations. The new website not only looks fantastic but also
@@ -256,8 +256,8 @@ export default function Home() {
               John Doe - XYZ Corp
             </p>
           </div>
-          <div className="border border-black p-8 rounded-md sharp-shadow-sm">
-            <p className="text-sm leading-[180%]">
+          <div className="border border-black p-8 rounded-md sharp-shadow-sm sm:w-4/5 md:w-full mx-auto">
+            <p className="text-sm leading-[180%] max-w-[40ch]">
               Incredible results! Choten Labs breathed new life into our
               outdated website. Their team&apos;s creativity and strategic
               approach made the redesign process smooth. Our site now reflects
@@ -268,8 +268,8 @@ export default function Home() {
               Sam Keith - ABC Services
             </p>
           </div>
-          <div className="border border-black p-8 rounded-md sharp-shadow-sm">
-            <p className="text-sm leading-[180%]">
+          <div className="border border-black p-8 rounded-md sharp-shadow-sm sm:w-4/5 md:w-full mx-auto">
+            <p className="text-sm leading-[180%] max-w-[40ch]">
               Choten Labs is a game-changer! Our e-commerce site desperately
               needed a facelift, and they delivered beyond our hopes. The modern
               design, improved functionality, and seamless navigation have
