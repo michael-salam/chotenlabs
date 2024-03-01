@@ -17,6 +17,7 @@ import emailIcon from "@/public/images/email.svg";
 // data
 import { whyRedesign, process } from "@/data";
 import AvailableSpots from "@/components/AvailableSpots";
+import FreeReviewForm from "@/components/FreeReviewForm";
 
 export default function Home() {
   return (
@@ -40,21 +41,11 @@ export default function Home() {
         </h1>
         <p className="mx-auto text-sm sm:text-base">
           Want to get more out of your website and unlock its true potential?
-          You&apos;re in the right place. Request a{" "}
+          You&apos;re in the right place. Enter a valid web address to request a{" "}
           <span className="font-bold text-text-dark">free</span> website audit
-          to get started now!
+          now!
         </p>
-        <form className="flex flex-col sm:flex-row gap-2 border border-black bg-bg-light rounded-md p-1 md:p-2 w-full sm:w-fit mx-auto mt-4 sharp-shadow-sm">
-          <input
-            type="text"
-            placeholder="Your website address"
-            aria-label="Your website address"
-            className="py-1 md:py-2 px-2 md:px-4 outline-none rounded-md text-text-dark placeholder:text-text-mid"
-          />
-          <button className="btn btn-dark px-4 md:px-8 py-1 md:py-2">
-            Get a free website review
-          </button>
-        </form>
+        <FreeReviewForm />
         <span className="mt-2 inline-block text-sm">
           Ready now?{" "}
           <Link href="/" className="text-accent underline font-semibold">
