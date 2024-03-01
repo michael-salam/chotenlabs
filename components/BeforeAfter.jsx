@@ -11,23 +11,23 @@ const BeforeAfter = () => {
   const [activeTab, setActiveTab] = useState("before");
   return (
     <div className="flex-1 flex flex-col items-center">
-      {activeTab === "before" ? (
-        <Image
-          src={before}
-          alt="Jentex landing page"
-          width="320"
-          height="auto"
-          className="sharp-shadow-sm rounded-md border border-black"
-        />
-      ) : (
-        <Image
-          src={after}
-          alt="Jentex landing page"
-          width="320"
-          height="auto"
-          className="sharp-shadow-sm rounded-md border border-black"
-        />
-      )}
+      <div className="h-[80vh] overflow-y-scroll sharp-shadow-sm rounded-md border border-black">
+        {activeTab === "before" ? (
+          <Image
+            src={before}
+            alt="Jentex landing page"
+            width="320"
+            height="auto"
+          />
+        ) : (
+          <Image
+            src={after}
+            alt="Jentex landing page"
+            width="320"
+            height="auto"
+          />
+        )}
+      </div>
 
       <div className="flex gap-4 mt-4">
         <button

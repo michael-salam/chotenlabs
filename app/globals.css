@@ -6,6 +6,24 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-bg-light;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-accent rounded-sm;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent;
+}
+
 body {
   @apply bg-bg-light text-text-mid leading-[160%];
 }

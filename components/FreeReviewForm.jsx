@@ -51,7 +51,7 @@ const PopupForm = ({
   setIsShowingPopupForm,
 }) => {
   return (
-    <form className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-16 max-h-[95vh] max-w-[95vw] overflow-y-scroll rounded-md bg-bg-mid z-50 border border-black shadow-lg">
+    <form className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-16 px-4 sm:px-8 md:px-16 w-[90vw] sm:w-[80vw] md:w-[60vw] max-h-[95vh] max-w-[95vw] overflow-y-scroll rounded-md bg-bg-mid z-50 border border-black shadow-lg">
       <p className="font-black text-accent uppercase mb-4">Almost there!</p>
       <p className="max-w-[40ch] text-2xl sm:text-3xl mb-8">
         Enter your email to receive a free website review for{" "}
