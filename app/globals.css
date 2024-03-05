@@ -128,6 +128,11 @@ header {
   transform: translate(0);
 }
 
+.animation-grow {
+  animation: grow 0.1s backwards;
+  transform-origin: top left;
+}
+
 @keyframes pulse {
   to {
     opacity: 0;
@@ -138,6 +143,17 @@ header {
   from {
     transform: translate(2px, 2px);
     box-shadow: none;
+  }
+}
+
+@keyframes grow {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
   }
 }
 /* :root {

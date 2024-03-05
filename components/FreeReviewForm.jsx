@@ -63,24 +63,6 @@ const PopupForm = ({
   setEmailAddress,
   setIsShowingPopupForm,
 }) => {
-  // const [sendEmailState, sendEmailAction] = useFormState(sendEmail, {
-  //   error: null,
-  //   success: false,
-  // });
-
-  // useEffect(() => {
-  //   if (sendEmailState.success) {
-  //     alert("Email sent!");
-  //     setFirstName("");
-  //     setWebsiteAddress("");
-  //     setEmailAddress("");
-  //     setIsShowingPopupForm(false);
-  //   }
-  //   if (sendEmailState.error) {
-  //     alert("Error sending email!");
-  //   }
-  // }, [sendEmailState]);
-
   const [isLoading, setIsLoading] = useState(false);
   const [emailActionResponse, setEmailActionResponse] = useState(null);
 
@@ -101,7 +83,7 @@ const PopupForm = ({
   return (
     <form
       onSubmit={handleSubmitForm}
-      className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-16 px-4 sm:px-8 md:px-16 w-[90vw] sm:w-[80vw] md:w-[60vw] max-h-[95vh] max-w-[95vw] overflow-y-scroll rounded-md bg-bg-mid z-50 border border-black shadow-lg"
+      className="animation-grow fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-16 px-4 sm:px-8 md:px-16 w-[90vw] sm:w-[80vw] md:w-[60vw] max-h-[95vh] max-w-[95vw] overflow-y-scroll rounded-md bg-bg-light z-50 border border-black shadow-lg"
     >
       {emailActionResponse ? (
         <div className="grid place-items-center">
