@@ -85,6 +85,10 @@ header {
   @apply bg-black text-white;
 }
 
+.btn-dark:disabled {
+  @apply bg-black/15;
+}
+
 .btn-light {
   @apply bg-white text-bg-dark px-4 py-1;
 }

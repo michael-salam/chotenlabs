@@ -1,10 +1,10 @@
 "use server";
 import { Resend } from "resend";
 import EmailTemplate from "@/components/EmailTemplate";
-export const sendEmail = async (prevState, formData) => {
-  const firstName = formData.get("firstName");
-  const email = formData.get("email");
-  const website = formData.get("website");
+export const sendEmail = async (data) => {
+  const firstName = data.firstName;
+  const email = data.emailAddress;
+  const website = data.websiteAddress;
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.batch.send([
@@ -22,14 +22,14 @@ export const sendEmail = async (prevState, formData) => {
       },
     ]);
     return {
-      error: null,
       success: true,
+      message: "Your free website review is on its way!",
     };
   } catch (error) {
     console.log(error);
     return {
-      error: error.message,
       success: false,
+      message: "An error occurred. Please try again.",
     };
   }
 };
