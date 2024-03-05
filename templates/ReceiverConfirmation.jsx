@@ -1,5 +1,5 @@
 import { Html, Heading, Text } from "@react-email/components";
-const EmailTemplate = ({ firstName, website }) => {
+const ReceiverConfirmation = ({ firstName, website }) => {
   return (
     <Html lang="en">
       <Text>Hi there {firstName}</Text>
@@ -10,4 +10,4 @@ const EmailTemplate = ({ firstName, website }) => {
     </Html>
   );
 };
-export default EmailTemplate;
+export default ReceiverConfirmation;

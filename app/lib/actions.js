@@ -1,6 +1,7 @@
 "use server";
+import ReceiverConfirmation from "@/templates/ReceiverConfirmation";
+import SenderConfirmation from "@/templates/SenderConfirmation";
 import { Resend } from "resend";
-import EmailTemplate from "@/components/EmailTemplate";
 export const sendEmail = async (data) => {
   const firstName = data.firstName;
   const email = data.emailAddress;
@@ -11,14 +12,14 @@ export const sendEmail = async (data) => {
       {
         from: "send@chotenlabs.com",
         to: [email],
-        subject: "Request for Free Website Review",
-        react: EmailTemplate({ firstName, website }),
+        subject: "You Have Requested Free Website Review",
+        react: ReceiverConfirmation({ firstName, website }),
       },
       {
         from: "send@chotenlabs.com",
         to: ["hello@chotenlabs.com"],
-        subject: "Request for Free Website Review",
-        react: EmailTemplate({ firstName, website }),
+        subject: "New Request for Free Website Review",
+        react: SenderConfirmation({ firstName, website, email }),
       },
     ]);
     return {
