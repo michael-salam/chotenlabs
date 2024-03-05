@@ -82,6 +82,7 @@ const PopupForm = ({
 
   return (
     <form
+      netlify
       onSubmit={handleSubmitForm}
       className="animation-grow fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-16 px-4 sm:px-8 md:px-16 w-[90vw] sm:w-[80vw] md:w-[60vw] max-h-[95vh] max-w-[95vw] overflow-y-scroll rounded-md bg-bg-light z-50 border border-black shadow-lg"
     >
