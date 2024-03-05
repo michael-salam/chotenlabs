@@ -384,9 +384,9 @@ export default function Home() {
         </Link>
         <p className="text-sm mx-auto">
           Still need more clarity?{" "}
-          <Link href="/" className="underline">
+          <a href="#" className="underline">
             Get a free website review
-          </Link>
+          </a>
           .
         </p>
       </section>
