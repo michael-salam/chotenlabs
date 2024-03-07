@@ -69,10 +69,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <Link href="/" className="text-base">
-              <span className="block">Or</span>
-              <span className="block underline">Get a free website audit</span>
-            </Link>
+            <span className="block">Or</span>
+            <a
+              href="https://www.cognitoforms.com/ChotenLabs/GetAFreeWebsiteReview"
+              className="block underline"
+            >
+              Get a free website audit
+            </a>
           </li>
         </ul>
       )}
