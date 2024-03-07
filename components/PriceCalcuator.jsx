@@ -140,12 +140,12 @@ const PriceCalcuator = () => {
           className={`${isLoading ? "animate-spin block" : "hidden"} ml-auto`}
         />
       </div>
-      <Link
-        href="/"
+      <a
+        href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
         className="btn bg-bg-light sharp-shadow-light border border-bg-dark text-bg-dark px-4 py-3 sharp-shadow block text-center"
       >
         Get started with your redesign
-      </Link>
+      </a>
     </div>
   );
 };

@@ -45,12 +45,21 @@ export default function Home() {
           <span className="font-bold text-text-dark">free</span> website audit
           now!
         </p>
-        <FreeReviewForm />
+        <a
+          href="https://www.cognitoforms.com/ChotenLabs/GetAFreeWebsiteReview"
+          className="block w-fit mx-auto mt-4 btn btn-dark sharp-shadow-sm text-lg px-6 py-3"
+        >
+          Get a free website review
+        </a>
+        {/* <FreeReviewForm /> */}
         <span className="mt-2 inline-block text-sm">
           Ready now?{" "}
-          <Link href="/" className="text-accent underline font-semibold">
+          <a
+            href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
+            className="text-accent underline font-semibold"
+          >
             Apply for a redesign
-          </Link>
+          </a>
         </span>
 
         <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 mt-12">
@@ -343,12 +352,12 @@ export default function Home() {
               revenue.
             </p>
             <p className="opacity-80 mb-8">A mediocre website, not so much.</p>
-            <Link
-              href="/"
+            <a
+              href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
               className="border border-black btn bg-bg-light text-bg-dark px-8 py-2 sharp-shadow-light inline-block"
             >
               Apply for a redesign
-            </Link>
+            </a>
           </div>
           <Image
             src={afterScreenshot}
@@ -376,15 +385,18 @@ export default function Home() {
           If so, what are you waiting for? Click the button below to apply for a
           website redesign immediately!
         </p>
-        <Link
-          href="/"
+        <a
+          href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
           className="mb-4 btn bg-bg-light text-bg-dark px-8 py-2 sharp-shadow-light border border-black inline-block"
         >
           Apply for a redesign
-        </Link>
+        </a>
         <p className="text-sm mx-auto">
           Still need more clarity?{" "}
-          <a href="#" className="underline">
+          <a
+            href="https://www.cognitoforms.com/ChotenLabs/GetAFreeWebsiteReview"
+            className="underline"
+          >
             Get a free website review
           </a>
           .
@@ -398,7 +410,7 @@ export default function Home() {
           className="underline flex items-center gap-2"
         >
           <Image src={emailIcon} height="24" width="24" alt="Envelope" />
-          <span>chotencreativelabs@gmail.com</span>
+          <span>hello@chotenlabs.com</span>
         </a>
       </footer>
     </>

@@ -61,12 +61,12 @@ const Navbar = () => {
             </a>
           </li>
           <li className="mt-8">
-            <Link
-              href="/"
+            <a
+              href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
               className={`${redHatDisplay.className} btn bg-white text-bg-dark px-4 py-2 sharp-shadow-light text-base`}
             >
               Apply for a redesign
-            </Link>
+            </a>
           </li>
           <li>
             <Link href="/" className="text-base">
@@ -77,12 +77,12 @@ const Navbar = () => {
         </ul>
       )}
 
-      <Link
-        href="/"
+      <a
+        href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
         className={`${redHatDisplay.className} hidden md:block btn btn-dark sharp-shadow-sm text-sm px-4 py-2`}
       >
         Apply for a redesign
-      </Link>
+      </a>
 
       <button
         onClick={() => setIsMobileMenuVisible((prev) => !prev)}
