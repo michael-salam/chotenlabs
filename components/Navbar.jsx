@@ -65,7 +65,7 @@ const Navbar = () => {
               href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
               className={`${redHatDisplay.className} btn bg-white text-bg-dark px-4 py-2 sharp-shadow-light text-base`}
             >
-              Apply for a redesign
+              Get a free website audit
             </a>
           </li>
           <li>
@@ -74,7 +74,7 @@ const Navbar = () => {
               href="https://www.cognitoforms.com/ChotenLabs/GetAFreeWebsiteReview"
               className="block underline"
             >
-              Get a free website audit
+              Apply for a redesign
             </a>
           </li>
         </ul>
@@ -84,7 +84,7 @@ const Navbar = () => {
         href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
         className={`${redHatDisplay.className} hidden md:block btn btn-dark sharp-shadow-sm text-sm px-4 py-2`}
       >
-        Apply for a redesign
+        Get a free website audit
       </a>
 
       <button
