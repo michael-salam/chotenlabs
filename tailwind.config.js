@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -13,16 +13,21 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        accent: "#652FAD",
+        gradient: {
+          light: {
+            stops: ["#C8AFE9", "#652FAD"],
+          },
+          dark: {
+            stops: ["#170A29", "#090410"],
+          },
+        },
         bg: {
-          light: "#FCFCFC",
-          mid: "#F2F2F2",
-          dark: "#200F37",
+          dark: "#090410",
         },
         text: {
-          dark: "#333333",
-          mid: "#555555",
           light: "#FCFCFC",
+          mid: "#CCCCCC",
+          dark: "#090410",
         },
       },
     },
