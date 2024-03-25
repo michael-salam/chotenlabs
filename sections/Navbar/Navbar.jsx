@@ -8,13 +8,13 @@ import logo from "@/public/images/chotenlabs.svg";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 py-4 z-20 bg-bg-dark">
+    <nav className="sticky top-0 py-4 z-20 bg-bg-dark/95">
       <div className="flex items-center justify-between w-10/12 mx-auto">
         <Link href="/">
           <Image src={logo} alt="ChotenLabs logo" height="24" width="auto" />
         </Link>
 
-        <ul className="flex items-center gap-4 bg-white/10 rounded-full pl-8 py-4">
+        <ul className="flex items-center gap-4 bg-[#221D28] rounded-full pl-8 py-4">
           <li className="navlink">
             <a href="#our-process">Our process</a>
           </li>
