@@ -36,11 +36,15 @@ h4,
 h5,
 h6 {
   font-family: var(--font-red-hat-display);
-  @apply text-text-light tracking-tighter;
+  @apply text-text-light tracking-tighter leading-none;
 }
 
 h1 {
   @apply text-7xl;
+}
+
+h2 {
+  @apply text-4xl;
 }
 
 .btn-accent {
@@ -49,7 +53,7 @@ h1 {
 }
 
 section {
-  scroll-margin-top: 4rem;
+  @apply scroll-mt-16 py-12;
 }
 
 /* :root {
