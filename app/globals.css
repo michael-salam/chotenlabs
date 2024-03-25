@@ -25,7 +25,8 @@ html {
 } */
 
 body {
-  @apply bg-bg-dark text-text-mid;
+  font-family: var(--font-inter);
+  @apply bg-bg-dark text-text-mid overflow-x-hidden;
 }
 
 h1,
@@ -34,10 +35,16 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-text-light;
+  font-family: var(--font-red-hat-display);
+  @apply text-text-light tracking-tighter;
 }
 
-.btn {
+h1 {
+  @apply text-7xl;
+}
+
+.btn-accent {
+  font-family: var(--font-red-hat-display);
   @apply bg-gradient-to-b from-gradient-light-stops-0 to-gradient-light-stops-1 rounded-full text-text-dark font-semibold;
 }
 
