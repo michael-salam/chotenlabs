@@ -3,6 +3,10 @@
 import { useState } from "react";
 
 import "./interactive-process.css";
+import Link from "next/link";
+import Image from "next/image";
+
+import arrow from "@/public/images/arrow.svg";
 
 const InteractiveProcess = () => {
   const [activeStep, setActiveStep] = useState(1);
@@ -49,6 +53,13 @@ const InteractiveProcess = () => {
           weaknesses, and opportunities for improvement to come up with a
           strategy.
         </p>
+        <Link
+          href="/free-website-review"
+          className="text-accent flex items-center justify-center gap-4"
+        >
+          <span>Get a free website review</span>
+          <Image src={arrow} height="14" width="auto" alt="Arrow" />
+        </Link>
       </div>
       <div
         className={`${
