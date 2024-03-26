@@ -1,0 +1,3 @@
+.case-container:hover .img {
+  @apply opacity-80;
+}

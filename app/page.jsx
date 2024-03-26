@@ -4,6 +4,7 @@ import Navbar from "@/sections/Navbar/Navbar";
 import FloatingImages from "@/ui/FloatingImages";
 import Benefits from "@/sections/Benefits/Benefits";
 import Process from "@/sections/Process";
+import CaseStudies from "@/sections/CaseStudies/CaseStudies";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <FloatingImages />
       <Benefits />
       <Process />
+      <CaseStudies />
     </>
   );
 }
