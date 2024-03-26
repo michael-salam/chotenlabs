@@ -8,7 +8,7 @@ const Benefits = () => {
       </p>
       <h2 className="text-center mb-16">Don&apos;t be just another number</h2>
 
-      <div className="grid grid-cols-3 gap-8 w-10/12 mx-auto">
+      <div className="grid grid-cols-3 gap-8 w-11/12 mx-auto">
         <div className="col-span-1 p-8 rounded-2xl border border-accent/5 bg-bg-dark/30 text-sm">
           <h3 className="text-lg tracking-normal mb-4">
             Leave a unique impression

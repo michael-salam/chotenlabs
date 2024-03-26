@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <header className="w-10/12 mx-auto text-center h-[80vh] flex flex-col items-center justify-center">
+    <header className="w-11/12 mx-auto text-center h-[80vh] flex flex-col items-center justify-center">
       <h1 className="mb-4">
         Set your business{" "}
         <span className="text-accent relative after:absolute after:h-4 after:w-full after:bg-[#5B2B9C]/50 after:-z-10 after:bottom-4 after:left-0">

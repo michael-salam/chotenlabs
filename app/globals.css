@@ -6,18 +6,17 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 8px;
-} */
+}
 
-/* ::-webkit-scrollbar-track {
-  @apply bg-bg-light;
-} */
+::-webkit-scrollbar-track {
+  @apply bg-bg-dark;
+}
 
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-  @apply bg-accent rounded-sm;
-} */
+::-webkit-scrollbar-thumb {
+  @apply bg-accent/50 hover:bg-accent rounded-full;
+}
 
 /* Handle on hover */
 /* ::-webkit-scrollbar-thumb:hover {
@@ -27,6 +26,10 @@ html {
 body {
   font-family: var(--font-inter);
   @apply bg-bg-dark text-text-mid overflow-x-hidden;
+}
+
+.red-hat-font {
+  font-family: var(--font-red-hat-display);
 }
 
 h1,
@@ -53,7 +56,7 @@ h2 {
 }
 
 section {
-  @apply scroll-mt-16 py-12;
+  @apply scroll-mt-16 py-16;
 }
 
 /* :root {

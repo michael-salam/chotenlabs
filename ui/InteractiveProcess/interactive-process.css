@@ -1,0 +1,30 @@
+.step-icon {
+  @apply w-16 h-16 grid place-items-center rounded-full border-4 outline outline-bg-dark border-accent/30 text-accent/30 hover:text-accent hover:border-accent bg-bg-dark transition-colors cursor-default font-bold text-4xl;
+}
+
+.step-icon.active {
+  @apply text-accent border-accent;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to bottom, #c8afe91a, #c8afe900);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active-step {
+  animation: fade-in 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
