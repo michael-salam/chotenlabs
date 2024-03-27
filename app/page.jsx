@@ -5,6 +5,7 @@ import FloatingImages from "@/ui/FloatingImages";
 import Benefits from "@/sections/Benefits/Benefits";
 import Process from "@/sections/Process";
 import CaseStudies from "@/sections/CaseStudies/CaseStudies";
+import Pricing from "@/sections/Pricing/Pricing";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Benefits />
       <Process />
       <CaseStudies />
+      <Pricing />
     </>
   );
 }

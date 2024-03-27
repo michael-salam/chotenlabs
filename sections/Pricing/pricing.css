@@ -1,0 +1,7 @@
+.option {
+  @apply bg-accent/10 px-6 py-2 rounded-full font-semibold;
+}
+
+.col-1 .btn-accent {
+  @apply px-6 py-2;
+}

@@ -6,14 +6,6 @@
   @apply text-accent border-accent;
 }
 
-.gradient-text {
-  background-image: linear-gradient(to bottom, #c8afe91a, #c8afe900);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .active-step {
   animation: fade-in 0.5s ease-in-out forwards;
   opacity: 0;

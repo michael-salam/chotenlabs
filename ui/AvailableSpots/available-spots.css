@@ -1,0 +1,10 @@
+.ping-animation {
+  animation: ping 1s infinite;
+}
+
+@keyframes ping {
+  to {
+    scale: 1.2;
+    opacity: 0;
+  }
+}

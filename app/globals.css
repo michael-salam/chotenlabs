@@ -57,7 +57,23 @@ h2 {
 }
 
 section {
-  @apply scroll-mt-8 py-32;
+  @apply py-32;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to bottom, #c8afe91a, #c8afe900);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-bright {
+  background-image: linear-gradient(to bottom, #c8afe9, #652fad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* :root {
