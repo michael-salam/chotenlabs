@@ -6,6 +6,7 @@ import Benefits from "@/sections/Benefits/Benefits";
 import Process from "@/sections/Process";
 import CaseStudies from "@/sections/CaseStudies/CaseStudies";
 import Pricing from "@/sections/Pricing/Pricing";
+import FAQs from "@/sections/FAQs/FAQs";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Process />
       <CaseStudies />
       <Pricing />
+      <FAQs />
     </>
   );
 }

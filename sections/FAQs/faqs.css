@@ -1,0 +1,24 @@
+.faq-btn {
+  @apply flex items-center justify-between text-text-light font-semibold px-8 py-4 w-full border border-accent/5 rounded-full bg-gradient-to-br from-gradient-dark-stops-0 to-gradient-dark-stops-1;
+}
+
+.faq-details {
+  @apply text-sm leading-relaxed px-8;
+}
+
+.faq-details.active {
+  animation: slide-down 0.2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slide-down {
+  1% {
+    display: block;
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

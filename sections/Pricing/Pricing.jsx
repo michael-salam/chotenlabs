@@ -49,7 +49,9 @@ const Pricing = () => {
     <section id="pricing">
       <p className="uppercase text-center">Pricing</p>
       <h2 className="text-center mb-4">Try our price calculator</h2>
+
       <AvailableSpots />
+
       <div className="grid grid-cols-3 gap-8 w-11/12 mx-auto p-8 rounded-2xl border border-accent/5 bg-gradient-to-br from-gradient-dark-stops-0 to-gradient-dark-stops-1">
         <div className="col-span-1 col-1">
           <div className="mb-4">
