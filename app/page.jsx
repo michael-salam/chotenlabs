@@ -7,6 +7,7 @@ import Process from "@/sections/Process";
 import CaseStudies from "@/sections/CaseStudies/CaseStudies";
 import Pricing from "@/sections/Pricing/Pricing";
 import FAQs from "@/sections/FAQs/FAQs";
+import NextSteps from "@/sections/NextSteps";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <CaseStudies />
       <Pricing />
       <FAQs />
+      <NextSteps />
     </>
   );
 }

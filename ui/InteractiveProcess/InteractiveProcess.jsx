@@ -53,10 +53,7 @@ const InteractiveProcess = () => {
           weaknesses, and opportunities for improvement to come up with a
           strategy.
         </p>
-        <Link
-          href="/free-website-review"
-          className="text-accent flex items-center justify-center gap-4"
-        >
+        <Link href="/free-website-review" className="external-link mx-auto">
           <span>Get a free website review</span>
           <Image src={arrow} height="14" width="auto" alt="Arrow" />
         </Link>

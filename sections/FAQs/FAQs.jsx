@@ -152,6 +152,7 @@ const FAQs = () => {
           <div className="flex items-center gap-4">
             <a
               href="mailto:hello@chotenlabs.com"
+              target="_blank"
               className="bg-accent/10 flex items-center gap-4 font-semibold text-text-light w-fit pr-8 rounded-full"
             >
               <Image
@@ -166,6 +167,7 @@ const FAQs = () => {
 
             <a
               href="https://instagram.com/chotenlabs"
+              target="_blank"
               className="bg-accent/10 flex items-center gap-4 font-semibold text-text-light w-fit pr-8 rounded-full"
             >
               <Image

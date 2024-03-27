@@ -76,6 +76,13 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+.dark-bg-gradient {
+  @apply border border-accent/5 bg-gradient-to-br from-gradient-dark-stops-0 to-gradient-dark-stops-1;
+}
+
+.external-link {
+  @apply text-accent flex items-center gap-2 w-fit hover:gap-4 transition-all;
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

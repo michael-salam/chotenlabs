@@ -27,10 +27,7 @@ const CaseStudies = () => {
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
           </p>
-          <Link
-            href="/case-studies/reallifebizsol"
-            className="text-accent flex items-center gap-2 w-fit hover:gap-4 transition-all"
-          >
+          <Link href="/case-studies/reallifebizsol" className="external-link">
             <span>View case study</span>
             <Image src={arrow} height="14" width="auto" alt="Arrow" />
           </Link>
@@ -47,10 +44,7 @@ const CaseStudies = () => {
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
           </p>
-          <Link
-            href="/case-studies/reallifebizsol"
-            className="text-accent flex items-center gap-2 w-fit hover:gap-4 transition-all"
-          >
+          <Link href="/case-studies/reallifebizsol" className="external-link">
             <span>View case study</span>
             <Image src={arrow} height="14" width="auto" alt="Arrow" />
           </Link>
@@ -66,10 +60,7 @@ const CaseStudies = () => {
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
           </p>
-          <Link
-            href="/case-studies/reallifebizsol"
-            className="text-accent flex items-center gap-2 w-fit hover:gap-4 transition-all"
-          >
+          <Link href="/case-studies/reallifebizsol" className="external-link">
             <span>View case study</span>
             <Image src={arrow} height="14" width="auto" alt="Arrow" />
           </Link>
@@ -85,10 +76,7 @@ const CaseStudies = () => {
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
           </p>
-          <Link
-            href="/case-studies/reallifebizsol"
-            className="text-accent flex items-center gap-2 w-fit hover:gap-4 transition-all"
-          >
+          <Link href="/case-studies/reallifebizsol" className="external-link">
             <span>View case study</span>
             <Image src={arrow} height="14" width="auto" alt="Arrow" />
           </Link>
@@ -104,10 +92,7 @@ const CaseStudies = () => {
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
           </p>
-          <Link
-            href="/case-studies/reallifebizsol"
-            className="text-accent flex items-center gap-2 w-fit hover:gap-4 transition-all"
-          >
+          <Link href="/case-studies/reallifebizsol" className="external-link">
             <span>View case study</span>
             <Image src={arrow} height="14" width="auto" alt="Arrow" />
           </Link>

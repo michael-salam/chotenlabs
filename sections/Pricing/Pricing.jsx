@@ -52,7 +52,7 @@ const Pricing = () => {
 
       <AvailableSpots />
 
-      <div className="grid grid-cols-3 gap-8 w-11/12 mx-auto p-8 rounded-2xl border border-accent/5 bg-gradient-to-br from-gradient-dark-stops-0 to-gradient-dark-stops-1">
+      <div className="grid grid-cols-3 gap-8 w-11/12 mx-auto p-8 rounded-2xl dark-bg-gradient">
         <div className="col-span-1 col-1">
           <div className="mb-4">
             <p className="red-hat-font text-text-light font-bold mb-2">
