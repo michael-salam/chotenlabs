@@ -10,7 +10,7 @@ const FloatingImages = () => {
       {/* Floating images */}
       <a
         href="#case-studies"
-        className="opacity-30 rounded-lg overflow-hidden absolute -left-16 top-16 hover:opacity-80 hover:-left-8 transition-all"
+        className="opacity-30 absolute rounded-lg overflow-hidden -left-16 top-16 hover:opacity-80 hover:-left-8 transition-all"
       >
         <Image
           src={after1}

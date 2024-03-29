@@ -149,11 +149,11 @@ const FAQs = () => {
         <div className="col-span-2">
           <h3 className="text-2xl mb-4">Want to ask another question?</h3>
 
-          <div className="flex items-center gap-4">
+          <div>
             <a
               href="mailto:hello@chotenlabs.com"
               target="_blank"
-              className="bg-accent/10 flex items-center gap-4 font-semibold text-text-light w-fit pr-8 rounded-full"
+              className="mb-4 hover:opacity-80 transition-opacity bg-accent/10 flex items-center gap-4 font-medium w-full text-text-light w-fit pr-8 rounded-full"
             >
               <Image
                 src={gmailIcon}
@@ -168,7 +168,7 @@ const FAQs = () => {
             <a
               href="https://instagram.com/chotenlabs"
               target="_blank"
-              className="bg-accent/10 flex items-center gap-4 font-semibold text-text-light w-fit pr-8 rounded-full"
+              className="hover:opacity-80 transition-opacity bg-accent/10 flex items-center gap-4 font-medium w-full text-text-light w-fit pr-8 rounded-full"
             >
               <Image
                 src={instagramIcon}
