@@ -7,7 +7,7 @@ const NextSteps = () => {
   return (
     <section className="pb-0">
       <p className="uppercase text-center">Next steps</p>
-      <h2 className="text-center mb-16">So, you&apos;ve made it to the end</h2>
+      <h2>So, you&apos;ve made it to the end</h2>
 
       <div className="grid grid-cols-2 gap-8 w-8/12 mx-auto">
         <div className="col-span-1 dark-bg-gradient p-8 rounded-2xl">

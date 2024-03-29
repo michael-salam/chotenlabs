@@ -13,7 +13,7 @@ const FAQs = () => {
   return (
     <section id="faqs">
       <p className="uppercase text-center">FAQs</p>
-      <h2 className="text-center mb-16">Answering your questions</h2>
+      <h2>Answering your questions</h2>
 
       <div className="w-11/12 mx-auto grid grid-cols-5 gap-8">
         <div className="col-span-3">

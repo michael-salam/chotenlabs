@@ -56,7 +56,11 @@ h2 {
 }
 
 section {
-  @apply py-32;
+  @apply py-20 md:py-24 lg:py-32;
+}
+
+section h2 {
+  @apply mb-12 md:mb-14 lg:mb-16 text-center;
 }
 
 .gradient-text {

@@ -13,7 +13,7 @@ const CaseStudies = () => {
   return (
     <section id="case-studies">
       <p className="uppercase text-center">Case studies</p>
-      <h2 className="text-center mb-16">Concepts and real-life projects</h2>
+      <h2>Concepts and real-life projects</h2>
 
       <ul className="flex gap-8 overflow-x-scroll pb-4">
         <li className="case-container min-w-[25%]">
