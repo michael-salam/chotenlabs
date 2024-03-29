@@ -44,7 +44,7 @@ const InteractiveProcess = () => {
           activeStep === 1 ? "active-step" : "hidden"
         } text-center step-details`}
       >
-        <p className="red-hat-font gradient-text uppercase text-7xl -mb-8 font-black">
+        <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step I
         </p>
         <h3 className="tracking-normal text-3xl mb-4">Full website review</h3>
@@ -63,7 +63,7 @@ const InteractiveProcess = () => {
           activeStep === 2 ? "active-step" : "hidden"
         } text-center step-details`}
       >
-        <p className="red-hat-font gradient-text uppercase text-7xl -mb-8 font-black">
+        <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step II
         </p>
         <h3 className="tracking-normal text-3xl mb-4">UI/UX redesign</h3>
@@ -77,7 +77,7 @@ const InteractiveProcess = () => {
           activeStep === 3 ? "active-step" : "hidden"
         } text-center step-details`}
       >
-        <p className="red-hat-font gradient-text uppercase text-7xl -mb-8 font-black">
+        <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step III
         </p>
         <h3 className="tracking-normal text-3xl mb-4">
@@ -94,7 +94,7 @@ const InteractiveProcess = () => {
           activeStep === 4 ? "active-step" : "hidden"
         } text-center step-details`}
       >
-        <p className="red-hat-font gradient-text uppercase text-7xl -mb-8 font-black">
+        <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step IV
         </p>
         <h3 className="tracking-normal text-3xl mb-4">Post-launch support</h3>

@@ -1,5 +1,5 @@
 .step-icon {
-  @apply w-16 h-16 grid place-items-center rounded-full border-4 outline outline-bg-dark border-accent/30 text-accent/30 hover:text-accent hover:border-accent bg-bg-dark transition-colors cursor-default font-bold text-4xl;
+  @apply w-8 sm:w-16 h-8 sm:h-16 grid place-items-center rounded-full border-2 sm:border-4 outline outline-bg-dark border-accent/30 text-accent/30 hover:text-accent hover:border-accent bg-bg-dark transition-colors cursor-default font-semibold sm:font-bold sm:text-4xl;
 }
 
 .step-icon.active {
