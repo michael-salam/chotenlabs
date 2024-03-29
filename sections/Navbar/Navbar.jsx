@@ -15,6 +15,9 @@ const Navbar = () => {
 
       <ul className="flex items-center gap-4 rounded-full pl-8 py-4">
         <li className="navlink">
+          <a href="#why-redesign">Why redesign?</a>
+        </li>
+        <li className="navlink">
           <a href="#our-process">Our process</a>
         </li>
         <li className="navlink">

@@ -2,7 +2,7 @@ import "./benefits.css";
 
 const Benefits = () => {
   return (
-    <section className="benefits">
+    <section id="why-redesign" className="benefits">
       <p className="uppercase text-center">
         Over 400M active websites on the internet
       </p>
