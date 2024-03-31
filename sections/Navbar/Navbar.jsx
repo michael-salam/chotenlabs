@@ -20,7 +20,7 @@ const Navbar = () => {
       <nav
         className={` ${
           scrollDistance > 100 &&
-          "bg-accent/10 backdrop-blur border border-white/10"
+          "bg-accent/10 backdrop-blur border border-accent/10"
         } flex items-center justify-between w-11/12 mx-auto sticky top-4 mt-4 p-4 lg:py-0 lg:pr-0 lg:pl-8 rounded-full z-50 transition-colors duration-500`}
       >
         <Link href="/">
@@ -31,7 +31,7 @@ const Navbar = () => {
           className={`${
             scrollDistance > 100
               ? "bg-transparent"
-              : "bg-accent/10 backdrop-blur border border-white/10"
+              : "bg-accent/10 backdrop-blur border border-accent/10"
           } hidden lg:flex items-center gap-4 rounded-full pl-8 py-4 pr-[2px]`}
         >
           <li className="navlink">
