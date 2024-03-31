@@ -125,11 +125,23 @@ const Navbar = () => {
 
         <button
           onClick={() => setIsMobileMenuVisible((prev) => !prev)}
-          className="lg:hidden w-8 h-5 flex flex-col justify-between"
+          className="lg:hidden w-8 h-[25px] flex flex-col justify-between"
         >
-          <span className="h-1 w-full bg-white rounded-full" />
-          <span className="h-1 w-full bg-white rounded-full" />
-          <span className="h-1 w-full bg-white rounded-full" />
+          <span
+            className={`${
+              isMobileMenuVisible && "rotate-45"
+            } h-1 w-full bg-white rounded-full transition-all origin-top-left`}
+          />
+          <span
+            className={`${
+              isMobileMenuVisible && "opacity-0"
+            } h-1 w-full bg-white rounded-full transition-all`}
+          />
+          <span
+            className={`${
+              isMobileMenuVisible && "-rotate-45"
+            } h-1 w-full bg-white rounded-full transition-all origin-bottom-left`}
+          />
         </button>
       </nav>
 
