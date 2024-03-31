@@ -3,7 +3,7 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <header className="mt-8 min-h-[80vh] flex flex-col md:flex-row gap-8">
+    <header className="mt-8 min-h-[80vh] flex flex-col md:flex-row gap-8 overflow-hidden">
       <div className="flex-1 p-8 md:p-16">
         <h1 className="mb-8 max-w-[80%]">
           Premium website redesign for{" "}
