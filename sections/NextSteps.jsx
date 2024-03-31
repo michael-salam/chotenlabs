@@ -9,7 +9,7 @@ const NextSteps = () => {
       <p className="uppercase text-center">Next steps</p>
       <h2>So, you&apos;ve made it to the end</h2>
 
-      <div className="grid grid-cols-2 gap-8 w-8/12 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-11/12 lg:w-8/12 mx-auto text-sm md:text-base">
         <div className="col-span-1 dark-bg-gradient p-8 rounded-2xl">
           <p className="mb-4">
             We won&apos;t ask you to pay us to redesign your website just yet.
