@@ -68,7 +68,7 @@ const Navbar = () => {
         {isMobileMenuVisible && (
           <ul
             onClick={() => setIsMobileMenuVisible(false)}
-            className="absolute inset-0 top-20 h-fit rounded-2xl p-8 red-hat-font text-text-mid sm:text-2xl md:text-3xl"
+            className="absolute inset-0 top-20 h-fit rounded-2xl p-8 red-hat-font text-text-mid text-xl sm:text-2xl md:text-3xl"
           >
             <li>
               <a
