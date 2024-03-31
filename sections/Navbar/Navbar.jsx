@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,15 +12,28 @@ import arrow from "@/public/images/arrow.svg";
 
 const Navbar = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
+  const [scrollDistance, setScrollDistance] = useState(0);
+  window.addEventListener("scroll", () => setScrollDistance(window.scrollY));
 
   return (
     <>
-      <nav className="flex items-center justify-between w-11/12 mx-auto sticky top-4 p-6 lg:p-2 pl-6 lg:pl-16 mt-4 rounded-full z-50 bg-bg-dark/80 backdrop-blur">
+      <nav
+        className={` ${
+          scrollDistance > 100 &&
+          "bg-accent/10 backdrop-blur border border-white/10"
+        } flex items-center justify-between w-11/12 mx-auto sticky top-4 mt-4 p-4 lg:py-0 lg:pr-0 lg:pl-8 rounded-full z-50 transition-colors duration-500`}
+      >
         <Link href="/">
           <Image src={logo} alt="ChotenLabs logo" height="20" width="auto" />
         </Link>
 
-        <ul className="hidden lg:flex items-center gap-4 rounded-full pl-8 py-4">
+        <ul
+          className={`${
+            scrollDistance > 100
+              ? "bg-transparent"
+              : "bg-accent/10 backdrop-blur border border-white/10"
+          } hidden lg:flex items-center gap-4 rounded-full pl-8 py-4 pr-[2px]`}
+        >
           <li className="navlink">
             <a href="#why-redesign">Why redesign?</a>
           </li>
