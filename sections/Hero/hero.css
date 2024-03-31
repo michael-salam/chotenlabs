@@ -1,0 +1,19 @@
+.card {
+  @apply bg-center bg-no-repeat bg-cover relative after:absolute after:-inset-[2px] after:bg-[#10081C] after:hover:opacity-0 after:rounded-2xl after:transition-opacity after:duration-700;
+}
+
+.card-1 {
+  background-image: url(../../public/images/after-1.jpg);
+}
+
+.card-2 {
+  background-image: url(../../public/images/after-2.jpg);
+}
+
+.card-3 {
+  background-image: url(../../public/images/after-3.jpg);
+}
+
+.card-4 {
+  background-image: url(../../public/images/after-4.jpg);
+}
