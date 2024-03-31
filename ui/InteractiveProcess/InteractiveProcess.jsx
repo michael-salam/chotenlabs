@@ -12,7 +12,7 @@ const InteractiveProcess = () => {
   const [activeStep, setActiveStep] = useState(1);
   return (
     <>
-      <div className="red-hat-font flex items-center justify-center gap-8 mb-8 w-fit mx-auto relative before:absolute before:h-1 before:w-full before:bg-accent before:top-1/2 before:-translate-y-1/2 before:left-0 before:-z-10">
+      <div className="red-hat-font flex items-center justify-center gap-8 mb-8 w-fit mx-auto relative before:absolute before:h-[2px] sm:before:h-1 before:w-full before:bg-accent before:top-1/2 before:-translate-y-1/2 before:left-0 before:-z-10">
         <div
           onMouseOver={() => setActiveStep(1)}
           className={`${activeStep === 1 && "active"} step-icon`}

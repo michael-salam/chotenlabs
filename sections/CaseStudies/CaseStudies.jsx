@@ -15,14 +15,14 @@ const CaseStudies = () => {
       <p className="uppercase text-center">Case studies</p>
       <h2>Concepts and real-life projects</h2>
 
-      <ul className="flex gap-8 overflow-x-scroll pb-4">
-        <li className="case-container min-w-[25%]">
+      <ul className="flex gap-8 overflow-x-scroll px-4">
+        <li className="case-container">
           <Image
             src={after1}
             alt="BrandBoostHub website redesign mockup"
             height="500"
             width="auto"
-            className="img w-full mb-8 opacity-50 rounded-lg transition-opacity"
+            className="cover-image w-full mb-8 opacity-50 rounded-lg transition-opacity"
           />
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
@@ -33,13 +33,13 @@ const CaseStudies = () => {
           </Link>
         </li>
 
-        <li className="case-container min-w-[25%]">
+        <li className="case-container">
           <Image
             src={after2}
             alt="BrandBoostHub website redesign mockup"
             height="500"
             width="auto"
-            className="img w-full mb-8 opacity-50 rounded-lg transition-opacity"
+            className="cover-image w-full mb-8 opacity-50 rounded-lg transition-opacity"
           />
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
@@ -49,13 +49,13 @@ const CaseStudies = () => {
             <Image src={arrow} height="14" width="auto" alt="Arrow" />
           </Link>
         </li>
-        <li className="case-container min-w-[25%]">
+        <li className="case-container">
           <Image
             src={after3}
             alt="BrandBoostHub website redesign mockup"
             height="500"
             width="auto"
-            className="img w-full mb-8 opacity-50 rounded-lg transition-opacity"
+            className="cover-image w-full mb-8 opacity-50 rounded-lg transition-opacity"
           />
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
@@ -65,13 +65,13 @@ const CaseStudies = () => {
             <Image src={arrow} height="14" width="auto" alt="Arrow" />
           </Link>
         </li>
-        <li className="case-container min-w-[25%]">
+        <li className="case-container">
           <Image
             src={after4}
             alt="BrandBoostHub website redesign mockup"
             height="500"
             width="auto"
-            className="img w-full mb-8 opacity-50 rounded-lg transition-opacity"
+            className="cover-image w-full mb-8 opacity-50 rounded-lg transition-opacity"
           />
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
@@ -81,13 +81,13 @@ const CaseStudies = () => {
             <Image src={arrow} height="14" width="auto" alt="Arrow" />
           </Link>
         </li>
-        <li className="case-container min-w-[25%]">
+        <li className="case-container">
           <Image
             src={after3}
             alt="BrandBoostHub website redesign mockup"
             height="500"
             width="auto"
-            className="img w-full mb-8 opacity-50 rounded-lg transition-opacity"
+            className="cover-image w-full mb-8 opacity-50 rounded-lg transition-opacity"
           />
           <p className="mb-2 leading-tight">
             Real Life Business Solutions website redesign concept
