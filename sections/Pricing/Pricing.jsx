@@ -52,7 +52,7 @@ const Pricing = () => {
 
       <AvailableSpots />
 
-      <div className="grid grid-cols-3 gap-8 w-11/12 mx-auto p-8 rounded-2xl dark-bg-gradient">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-11/12 mx-auto p-8 rounded-2xl dark-bg-gradient">
         <div className="col-span-1 col-1">
           <div className="mb-4">
             <p className="red-hat-font text-text-light font-bold mb-2">
@@ -168,14 +168,14 @@ const Pricing = () => {
           </div>
           <Link
             href="/apply-for-redesign"
-            className="btn-accent inline-block px-8 py-4 text-center w-full text-xl"
+            className="btn-accent inline-block px-8 py-3 text-center w-full text-lg sm:text-xl"
           >
             Redesign my website
           </Link>
         </div>
 
-        <div className="col-span-1 text-sm">
-          <div className="mb-4">
+        <div className="md:col-span-2 lg:col-span-1 flex flex-col sm:flex-row lg:flex-col gap-8 lg:gap-4 text-sm">
+          <div className="max-w-[40ch] flex-1">
             <p className="font-bold text-text-light mb-2">Guaranteed:</p>
             <p className="mb-2">
               If you decide to also develop your website with us, we guarantee
@@ -188,7 +188,7 @@ const Pricing = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="max-w-[40ch] flex-1">
             <p className="font-bold text-text-light mb-2">Note:</p>
             <p>
               A custom quote will be required if your website has 15+ pages or
