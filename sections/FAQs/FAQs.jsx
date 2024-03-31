@@ -16,7 +16,7 @@ const FAQs = () => {
       <h2>Answering your questions</h2>
 
       <div className="w-11/12 mx-auto grid grid-cols-5 gap-8">
-        <div className="col-span-3">
+        <div className="col-span-5 md:col-span-3">
           <div className="mb-8 w-full">
             <button
               onClick={() => setActiveFaq(0)}
@@ -146,7 +146,7 @@ const FAQs = () => {
           </div>
         </div>
 
-        <div className="col-span-2">
+        <div className="col-span-5 md:col-span-2">
           <h3 className="text-2xl mb-4">Want to ask another question?</h3>
 
           <div>
