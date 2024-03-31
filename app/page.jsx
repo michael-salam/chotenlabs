@@ -14,7 +14,6 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <FloatingImages />
       <Benefits />
       <Process />
       <CaseStudies />

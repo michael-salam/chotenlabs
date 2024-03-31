@@ -13,7 +13,16 @@ import arrow from "@/public/images/arrow.svg";
 const Navbar = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const [scrollDistance, setScrollDistance] = useState(0);
-  window.addEventListener("scroll", () => setScrollDistance(window.scrollY));
+  useEffect(() => {
+    const options = { passive: true }; // options must match add/remove event
+    const scroll = (event) => {
+      const { scrollY } = window;
+      setScrollDistance(scrollY);
+    };
+    document.addEventListener("scroll", scroll, options);
+    // remove event on unmount to prevent a memory leak
+    () => document.removeEventListener("scroll", scroll, options);
+  }, []);
 
   return (
     <>
@@ -50,8 +59,8 @@ const Navbar = () => {
             <a href="#faqs">FAQs</a>
           </li>
           <li>
-            <Link href="/free-website-review" className="btn-accent px-8 py-4">
-              Get my free website review
+            <Link href="/free-website-review" className="btn-accent p-4">
+              Schedule a free website review
             </Link>
           </li>
         </ul>
@@ -59,67 +68,61 @@ const Navbar = () => {
         {isMobileMenuVisible && (
           <ul
             onClick={() => setIsMobileMenuVisible(false)}
-            className="absolute text-lg inset-0 top-20 h-fit rounded-2xl p-8 red-hat-font grid md:grid-cols-2 justify-items-start"
+            className="absolute inset-0 top-20 h-fit rounded-2xl p-8 red-hat-font text-text-mid sm:text-2xl md:text-3xl"
           >
-            <div className="text-text-light">
-              <li className="hover:text-text-light transition-colors">
-                <a
-                  onClick={() => setIsMobileMenuVisible(false)}
-                  href="#why-redesign"
-                >
-                  Why redesign?
-                </a>
-              </li>
-              <li className="hover:text-text-light transition-colors">
-                <a
-                  onClick={() => setIsMobileMenuVisible(false)}
-                  href="#our-process"
-                >
-                  Our process
-                </a>
-              </li>
-              <li className="hover:text-text-light transition-colors">
-                <a
-                  onClick={() => setIsMobileMenuVisible(false)}
-                  href="#case-studies"
-                >
-                  Case studies
-                </a>
-              </li>
-              <li className="hover:text-text-light transition-colors">
-                <a
-                  onClick={() => setIsMobileMenuVisible(false)}
-                  href="#pricing"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li className="hover:text-text-light transition-colors">
-                <a onClick={() => setIsMobileMenuVisible(false)} href="#faqs">
-                  FAQs
-                </a>
-              </li>
-            </div>
-
-            <div>
-              <li className="mt-8 mb-2">
-                <a
-                  href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
-                  className="btn-accent px-4 py-2 inline-block"
-                >
-                  Get a free website audit
-                </a>
-              </li>
-              <li>
-                <Link
-                  href="/free-website-review"
-                  className="external-link items-center"
-                >
-                  <span>Apply for a redesign</span>
-                  <Image src={arrow} height="12" width="auto" alt="Arrow" />
-                </Link>
-              </li>
-            </div>
+            <li>
+              <a
+                onClick={() => setIsMobileMenuVisible(false)}
+                className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
+                href="#why-redesign"
+              >
+                Why redesign?
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => setIsMobileMenuVisible(false)}
+                className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
+                href="#our-process"
+              >
+                Our process
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => setIsMobileMenuVisible(false)}
+                className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
+                href="#case-studies"
+              >
+                Case studies
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => setIsMobileMenuVisible(false)}
+                className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
+                href="#pricing"
+              >
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => setIsMobileMenuVisible(false)}
+                className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
+                href="#faqs"
+              >
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
+                className="p-4 rounded-none inline-block bg-gradient-to-b from-gradient-light-stops-0 to-gradient-light-stops-1 text-text-dark font-semibold hover:opacity-80 transition-opacity w-full"
+              >
+                Schedule a website review (it's free!)
+              </a>
+            </li>
           </ul>
         )}
 
