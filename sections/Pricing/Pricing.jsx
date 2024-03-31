@@ -153,7 +153,7 @@ const Pricing = () => {
           <p className="red-hat-font text-2xl text-text-light mb-4">
             Starts at:
           </p>
-          <div className="flex items-center mb-4 text-5xl font-bold">
+          <div className="flex items-center mb-4 text-4xl sm:text-5xl font-bold">
             <span className="line-through text-accent/20">${totalCost}</span>
             <span className="gradient-text-bright"> ${totalCost * 0.2}</span>
             <Image
@@ -168,7 +168,7 @@ const Pricing = () => {
           </div>
           <Link
             href="/apply-for-redesign"
-            className="btn-accent inline-block px-8 py-3 text-center w-full text-lg sm:text-xl"
+            className="btn-accent inline-block px-8 py-3 text-center w-full text-base sm:text-xl"
           >
             Redesign my website
           </Link>
