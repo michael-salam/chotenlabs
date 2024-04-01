@@ -6,12 +6,9 @@ const Hero = () => {
     <header className="mt-8 min-h-[80vh] flex flex-col md:flex-row gap-8 overflow-hidden">
       <div className="flex-1 p-8 md:p-16">
         <h1 className="mb-8 max-w-[80%]">
-          Premium website redesign for{" "}
+          Premium website redesign{" "}
           <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
-            service-{" "}
-          </span>
-          <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
-            based{" "}
+            for{" "}
           </span>
           <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
             businesses
