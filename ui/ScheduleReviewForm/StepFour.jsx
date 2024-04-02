@@ -5,7 +5,7 @@ const StepFour = () => {
     <div className="dark-bg-gradient p-8 rounded-2xl">
       <p className="font-semibold text-text-light text-xl">Almost there!</p>
       <p className="text-lg mb-4">
-        We've received your details. All you need to do now is pick a time for
+        We have received your details. All you need to do now is pick a time for
         the review.
       </p>
       <div className="flex items-center justify-between">
