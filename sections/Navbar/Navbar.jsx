@@ -59,7 +59,7 @@ const Navbar = () => {
             <a href="#faqs">FAQs</a>
           </li>
           <li>
-            <Link href="/free-website-review" className="btn-accent p-4">
+            <Link href="/schedule-a-review" className="btn-accent p-4">
               Schedule a free website review
             </Link>
           </li>
@@ -116,12 +116,13 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a
-                href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
+              <Link
+                href="/schedule-a-review"
+                // href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
                 className="p-4 rounded-none inline-block bg-gradient-to-b from-gradient-light-stops-0 to-gradient-light-stops-1 text-text-dark font-semibold hover:opacity-80 transition-opacity w-full"
               >
                 Schedule a website review (it's free!)
-              </a>
+              </Link>
             </li>
           </ul>
         )}

@@ -167,7 +167,7 @@ const Pricing = () => {
             />
           </div>
           <Link
-            href="/apply-for-redesign"
+            href="/schedule-a-review"
             className="btn-accent inline-block px-8 py-3 text-center w-full text-base sm:text-xl"
           >
             Redesign my website

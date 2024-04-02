@@ -47,14 +47,14 @@ const InteractiveProcess = () => {
         <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step I
         </p>
-        <h3 className="tracking-normal text-3xl mb-4">Full website review</h3>
+        <h3 className="tracking-normal text-3xl mb-4">Review</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
           We analyze every aspect of your current site to identify strengths,
           weaknesses, and opportunities for improvement to come up with a
           strategy.
         </p>
-        <Link href="/free-website-review" className="external-link mx-auto">
-          <span>Get a free website review</span>
+        <Link href="/schedule-a-review" className="external-link mx-auto">
+          <span>Schedule a free website review</span>
           <Image src={arrow} height="14" width="auto" alt="Arrow" />
         </Link>
       </div>
@@ -66,7 +66,7 @@ const InteractiveProcess = () => {
         <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step II
         </p>
-        <h3 className="tracking-normal text-3xl mb-4">UI/UX redesign</h3>
+        <h3 className="tracking-normal text-3xl mb-4">Design</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
           Once we know exactly what needs to be improved, we go ahead to
           redesign the user interface and experience of your website.
@@ -80,13 +80,10 @@ const InteractiveProcess = () => {
         <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step III
         </p>
-        <h3 className="tracking-normal text-3xl mb-4">
-          Web development (optional)
-        </h3>
+        <h3 className="tracking-normal text-3xl mb-4">Development</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
-          Once we design a new user interface for your website, you can choose
-          to go ahead with development yourself, or work with us to bring it to
-          life.
+          Once we design a new user interface for your website, we work together
+          to bring it to life.
         </p>
       </div>
       <div
@@ -97,10 +94,10 @@ const InteractiveProcess = () => {
         <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step IV
         </p>
-        <h3 className="tracking-normal text-3xl mb-4">Post-launch support</h3>
+        <h3 className="tracking-normal text-3xl mb-4">Launch</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
-          After delivering a fully functional website, we provide training as
-          well as free 30 days post-launch support to your business.
+          Finally, we launch your new website and provide training as well as
+          free 30 days post-launch support to your business.
         </p>
       </div>
     </>

@@ -5,15 +5,36 @@
 .card-1 {
   background-image: url(../../public/images/after-1.jpg);
 }
+.card-1::after {
+  animation: show 4s 1s alternate;
+}
 
 .card-2 {
   background-image: url(../../public/images/after-2.jpg);
+}
+.card-2::after {
+  animation: show 4s 3s alternate;
 }
 
 .card-3 {
   background-image: url(../../public/images/after-3.jpg);
 }
+.card-3::after {
+  animation: show 4s 7s alternate;
+}
 
 .card-4 {
   background-image: url(../../public/images/after-4.jpg);
+}
+.card-4::after {
+  animation: show 4s 5s alternate;
+}
+
+@keyframes show {
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
