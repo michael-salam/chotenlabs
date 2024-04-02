@@ -1,0 +1,6 @@
+.large-bg {
+  background-image: url(../../public/images/large-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
