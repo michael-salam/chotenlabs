@@ -1,8 +1,8 @@
 const page = () => {
   return (
-    <div>
+    <form>
       <h1>Schedule a free website review</h1>
-    </div>
+    </form>
   );
 };
 
