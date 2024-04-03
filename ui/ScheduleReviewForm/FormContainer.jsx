@@ -16,9 +16,12 @@ const stepOneValidationSchema = Yup.object({
     .email("Invalid email format")
     .required("Email address is required"),
   phone: Yup.string().required("Please provide a phone number"),
-  websiteURL: Yup.string().required(
-    "We need the URL of your website to review it"
-  ),
+  websiteURL: Yup.string()
+    .test("test-url", "Invalid URL format", (value) => {
+      const regex = /(https?:\/\/)?([\da-z\.-]+)\.([a-z]{2,6})([\/\w.-]*)*\/?$/;
+      return regex.test(value);
+    })
+    .required("We need the URL of your website to review it"),
 });
 
 const stepTwoValidationSchema = Yup.object({
