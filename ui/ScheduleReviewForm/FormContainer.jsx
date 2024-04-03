@@ -85,7 +85,7 @@ const FormContainer = () => {
 
   console.log(data);
 
-  return <div className="col-span-10 lg:col-span-8">{steps[currentStep]}</div>;
+  return <div className="col-span-6 lg:col-span-4">{steps[currentStep]}</div>;
 };
 
 export default FormContainer;

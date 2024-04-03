@@ -4,8 +4,8 @@ import "./page.css";
 
 const page = () => {
   return (
-    <div className="large-bg min-h-[100vh] p-8 sm:p-16 grid grid-cols-12 gap-16 content-center">
-      <h1 className="col-span-10 lg:col-span-4">
+    <div className="large-bg min-h-[100vh] px-2 pt-8 md:pt-16 sm:px-16 grid grid-cols-6 gap-8 lg:gap-16 content-center">
+      <h1 className="col-span-6 lg:col-span-2">
         Schedule a free website review
       </h1>
       <FormContainer />
