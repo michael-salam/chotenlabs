@@ -3,7 +3,9 @@ import Link from "next/link";
 const StepFour = () => {
   return (
     <div className="dark-bg-gradient p-8 rounded-2xl">
-      <p className="font-semibold text-text-light text-xl">Almost there!</p>
+      <p className="font-semibold text-text-light text-xl red-hat-font">
+        Almost there!
+      </p>
       <p className="text-lg mb-4">
         We have received your details. All you need to do now is pick a time for
         the review.
