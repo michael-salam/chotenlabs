@@ -83,8 +83,6 @@ const FormContainer = () => {
     <StepFour />,
   ];
 
-  console.log(data);
-
   return <div className="col-span-6 lg:col-span-4">{steps[currentStep]}</div>;
 };
 
