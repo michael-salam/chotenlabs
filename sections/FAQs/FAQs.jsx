@@ -22,18 +22,23 @@ const FAQs = () => {
               onClick={() => setActiveFaq(0)}
               className="faq-btn red-hat-font mb-4"
             >
-              <span>What is a website redesign?</span>
+              <span>How does the subscription model work?</span>
               <span>{activeFaq === 0 ? "-" : "+"}</span>
             </button>
-            <p
+            <div
               className={`${activeFaq === 0 ? "active" : "hidden"} faq-details`}
             >
-              Redesigning a website involves careful analysis of the current
-              state of your website, and exactly how it can be improved, taking
-              into account your unique business goals. A redesign focuses on
-              better user experience, performance, mobile responsiveness, search
-              engine optimisation, and many more.
-            </p>
+              <p className="mb-2">
+                Unlike a one-time payment, the subscription model involves
+                paying a fixed monthly fee for a minimum agreed duration (24
+                months for ChotenLabs), after which you get full ownership of
+                the website.
+              </p>
+              <p>
+                You are also given the option to redesign your website after the
+                agreed duration.
+              </p>
+            </div>
           </div>
 
           <div className="mb-8 w-full">
@@ -41,22 +46,22 @@ const FAQs = () => {
               onClick={() => setActiveFaq(1)}
               className="faq-btn red-hat-font mb-4"
             >
-              <span>What is included in a ChotenLabs website redesign?</span>
+              <span>How is a subscription better than a one-time payment?</span>
               <span>{activeFaq === 1 ? "-" : "+"}</span>
             </button>
             <div
               className={`${activeFaq === 1 ? "active" : "hidden"} faq-details`}
             >
-              <p>
-                When you redesign your website with us, you get these and more:
+              <p className="mb-4">
+                There are several reasons why subscription web design is better
+                than the conventional one-time payment, including:
               </p>
               <ul className="list-disc list-inside">
-                <li>Unique UI design</li>
-                <li>Custom website development</li>
-                <li>Mobile responsiveness</li>
-                <li>Performance optimisation</li>
-                <li>On-page Search Engine Optimisation (SEO)</li>
-                <li>Google analytics setup</li>
+                <li>Lower upfront costs</li>
+                <li>Continuous support and updates</li>
+                <li>Scalability</li>
+                <li>Predictable expenses</li>
+                <li>Long-term relationship</li>
               </ul>
             </div>
           </div>
@@ -66,24 +71,17 @@ const FAQs = () => {
               onClick={() => setActiveFaq(2)}
               className="faq-btn red-hat-font mb-4"
             >
-              <span>What is not included in a Choten Labs redesign?</span>
+              <span>What if I don&apos;t want to pay a subscription?</span>
               <span>{activeFaq === 2 ? "-" : "+"}</span>
             </button>
             <div
               className={`${activeFaq === 2 ? "active" : "hidden"} faq-details`}
             >
               <p>
-                ChotenLabs will not handle the following while and/or after
-                redesigning your website:
+                You don&apos;t have to sign up for a subscription if you
+                don&apos;t want to. If you fancy a one-time payment, we can do
+                that also.
               </p>
-              <ul className="list-disc list-inside">
-                <li>E-commerce integration</li>
-                <li>CMS integration</li>
-                <li>Chatbot integration</li>
-                <li>Backend development</li>
-                <li>Off-page seo</li>
-                <li>Website maintenance</li>
-              </ul>
             </div>
           </div>
 
@@ -92,14 +90,19 @@ const FAQs = () => {
               onClick={() => setActiveFaq(3)}
               className="faq-btn red-hat-font mb-4"
             >
-              <span>How much does a Choten Labs redesign cost?</span>
+              <span>Can I cancel my subscription?</span>
               <span>{activeFaq === 3 ? "-" : "+"}</span>
             </button>
             <div
               className={`${activeFaq === 3 ? "active" : "hidden"} faq-details`}
             >
+              <p className="mb-2">
+                Yes, you can cancel your subscription at any time.
+              </p>
               <p>
-                A standard website redesign from ChotenLabs starts at $1,995
+                However, you must note that you are only given full ownership of
+                the website when the minimum contract duration is complete (24
+                months).
               </p>
             </div>
           </div>
@@ -109,16 +112,21 @@ const FAQs = () => {
               onClick={() => setActiveFaq(4)}
               className="faq-btn red-hat-font mb-4"
             >
-              <span>How long will it take to redesign our website?</span>
+              <span>
+                What happens if I want to make changes or updates to my website?
+              </span>
               <span>{activeFaq === 4 ? "-" : "+"}</span>
             </button>
             <div
               className={`${activeFaq === 4 ? "active" : "hidden"} faq-details`}
             >
+              <p className="mb-2">
+                Once you decide to work with us, you get a dedicated client
+                portal on Notion.
+              </p>
               <p>
-                A standard redesign typically takes about 21 days to complete.
-                However, once we know more details about your project, we will
-                let you know if it will take longer to complete.
+                From this portal, you can make requests, give and recive
+                feedback on the website.
               </p>
             </div>
           </div>
@@ -129,18 +137,39 @@ const FAQs = () => {
               className="faq-btn red-hat-font mb-4"
             >
               <span>
-                What technologies and/or platforms does Choten Labs use for
-                redesigns?
+                Do you offer SEO services as part of the subscription?
               </span>
               <span>{activeFaq === 5 ? "-" : "+"}</span>
             </button>
             <div
               className={`${activeFaq === 5 ? "active" : "hidden"} faq-details`}
             >
+              <p className="mb-2">
+                All websites are built with on-page SEO in mind.
+              </p>
+              <p>
+                However, a full SEO service requires an additional $35/month.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-8 w-full">
+            <button
+              onClick={() => setActiveFaq(6)}
+              className="faq-btn red-hat-font mb-4"
+            >
+              <span>
+                What technologies and/or platforms does ChotenLabs use for web
+                design?
+              </span>
+              <span>{activeFaq === 6 ? "-" : "+"}</span>
+            </button>
+            <div
+              className={`${activeFaq === 6 ? "active" : "hidden"} faq-details`}
+            >
               <p>
                 ChotenLabs builds custom-coded websites with HTML, CSS and
-                JavaScript. However, using a different platform will require an
-                extra charge.
+                JavaScript.
               </p>
             </div>
           </div>
