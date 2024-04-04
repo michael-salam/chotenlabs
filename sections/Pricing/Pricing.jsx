@@ -52,7 +52,7 @@ const Pricing = () => {
       <p className="uppercase text-center">Pricing</p>
       <h2 className="mb-16">Explore plans</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-4/5 mx-auto gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-11/12 md:w-4/5 mx-auto gap-8">
         <div className="pricing-card">
           <h3 className="p-2 border border-accent/30 mb-8 rounded-full tracking-normal uppercase text-text-mid text-sm">
             Subscription
