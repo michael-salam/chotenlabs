@@ -1,4 +1,3 @@
-import Link from "next/link";
 import "./hero.css";
 
 const Hero = () => {
@@ -26,7 +25,7 @@ const Hero = () => {
             href="#pricing"
             className="btn-accent px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block w-fit text-lg"
           >
-            See plans
+            See pricing
           </a>
 
           <a

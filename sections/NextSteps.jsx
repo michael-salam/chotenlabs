@@ -1,11 +1,6 @@
-import Link from "next/link";
-
-import arrow from "@/public/images/arrow.svg";
-import Image from "next/image";
-
 const NextSteps = () => {
   return (
-    <section className="pb-0 text-center px-4">
+    <section className="pb-0 text-center px-4 next-steps">
       <p className="uppercase">Next steps</p>
       <h2 className="mb-4">So, you&apos;ve made it to the end</h2>
 

@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 import "./interactive-process.css";
-import Link from "next/link";
-import Image from "next/image";
 
 import arrow from "@/public/images/arrow.svg";
 

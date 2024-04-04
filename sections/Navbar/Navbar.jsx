@@ -8,7 +8,6 @@ import "./navbar.css";
 
 // import images
 import logo from "@/public/images/chotenlabs.svg";
-import arrow from "@/public/images/arrow.svg";
 
 const Navbar = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
@@ -60,7 +59,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#pricing" className="btn-accent px-8 py-4">
-              See plans
+              Pricing
             </a>
           </li>
         </ul>
@@ -118,10 +117,9 @@ const Navbar = () => {
             <li>
               <a
                 href="#pricing"
-                // href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
                 className="p-4 rounded-none inline-block bg-gradient-to-b from-gradient-light-stops-0 to-gradient-light-stops-1 text-text-dark font-semibold hover:opacity-80 transition-opacity w-full"
               >
-                See plans
+                Pricing
               </a>
             </li>
           </ul>

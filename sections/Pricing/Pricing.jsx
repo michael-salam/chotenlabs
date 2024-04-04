@@ -1,56 +1,12 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import check from "@/public/images/check.svg";
-import checkDark from "@/public/images/check-dark.svg";
-
-import AvailableSpots from "@/ui/AvailableSpots/AvailableSpots";
-
-import loadingSpinner from "@/public/images/loading-spinner.svg";
 
 import "./pricing.css";
 
 const Pricing = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [pageNumberRange, setPageNumberRange] = useState("1-5");
-  const [styleOfDesign, setStyleOfDesign] = useState("standard");
-  const [includeDevelopment, setIncludeDevelopment] = useState("no");
-  const [totalCost, setTotalCost] = useState(0);
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (pageNumberRange === "1-5") {
-        setTotalCost(995);
-      }
-      if (pageNumberRange === "6-10") {
-        setTotalCost(1195);
-      }
-      if (pageNumberRange === "10-15") {
-        setTotalCost(1395);
-      }
-      if (styleOfDesign === "high-end") {
-        setTotalCost((prev) => prev + 300);
-      }
-      if (includeDevelopment === "yes") {
-        setTotalCost((prev) => prev + 1000);
-      }
-    }, 1000);
-  }, [pageNumberRange, styleOfDesign, includeDevelopment]);
-
-  // useEffect to handle loading animation
-  useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-  }, [pageNumberRange, styleOfDesign, includeDevelopment]);
-
   return (
     <section id="pricing">
       <p className="uppercase text-center">Pricing</p>
-      <h2 className="mb-16">Explore plans</h2>
+      <h2 className="mb-16">Explore pricing options</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 w-11/12 md:w-4/5 mx-auto gap-8">
         <div className="pricing-card">
