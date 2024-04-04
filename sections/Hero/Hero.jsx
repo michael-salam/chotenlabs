@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <header className="pt-8 pb-1 min-h-[60vh] flex flex-col md:flex-row gap-8 overflow-hidden">
       <div className="flex-1 p-8 md:p-16">
-        <h1 className="mb-4 max-w-[90%]">
+        <h1 className="mb-4 sm:max-w-[90%]">
           Custom web design{" "}
           <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
             on{" "}
