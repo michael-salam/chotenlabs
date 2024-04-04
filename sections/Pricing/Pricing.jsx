@@ -50,7 +50,7 @@ const Pricing = () => {
       <p className="uppercase text-center">Pricing</p>
       <h2 className="mb-4">Try our price calculator</h2>
 
-      <AvailableSpots />
+      {/* <AvailableSpots /> */}
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-11/12 mx-auto p-8 rounded-2xl dark-bg-gradient">
         <div className="col-span-1 col-1">

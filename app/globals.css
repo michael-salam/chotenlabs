@@ -57,7 +57,7 @@ h2 {
 }
 
 section {
-  @apply py-20 md:py-24 lg:py-32;
+  @apply py-20 md:py-24 lg:py-28;
 }
 
 section h2 {

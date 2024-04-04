@@ -44,7 +44,10 @@ const Navbar = () => {
           } hidden lg:flex items-center gap-4 rounded-full pl-8 py-4 pr-[2px]`}
         >
           <li className="navlink">
-            <a href="#why-redesign">Why redesign?</a>
+            <a href="#services">Services</a>
+          </li>
+          <li className="navlink">
+            <a href="#benefits">Benefits</a>
           </li>
           <li className="navlink">
             <a href="#our-process">Our process</a>
@@ -53,15 +56,12 @@ const Navbar = () => {
             <a href="#case-studies">Case studies</a>
           </li>
           <li className="navlink">
-            <a href="#pricing">Pricing</a>
-          </li>
-          <li className="navlink">
             <a href="#faqs">FAQs</a>
           </li>
           <li>
-            <Link href="/schedule-a-review" className="btn-accent p-4">
-              Schedule a free website review
-            </Link>
+            <a href="#pricing" className="btn-accent p-4">
+              See plans
+            </a>
           </li>
         </ul>
 
@@ -74,9 +74,18 @@ const Navbar = () => {
               <a
                 onClick={() => setIsMobileMenuVisible(false)}
                 className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
-                href="#why-redesign"
+                href="#services"
               >
-                Why redesign?
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => setIsMobileMenuVisible(false)}
+                className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
+                href="#benefits"
+              >
+                Benefits
               </a>
             </li>
             <li>
@@ -101,28 +110,19 @@ const Navbar = () => {
               <a
                 onClick={() => setIsMobileMenuVisible(false)}
                 className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
-                href="#pricing"
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={() => setIsMobileMenuVisible(false)}
-                className="hover:text-text-light hover:italic transition-colors w-full p-4 border-b inline-block"
                 href="#faqs"
               >
                 FAQs
               </a>
             </li>
             <li>
-              <Link
-                href="/schedule-a-review"
+              <a
+                href="#pricing"
                 // href="https://www.cognitoforms.com/ChotenLabs/ApplyForARedesign"
                 className="p-4 rounded-none inline-block bg-gradient-to-b from-gradient-light-stops-0 to-gradient-light-stops-1 text-text-dark font-semibold hover:opacity-80 transition-opacity w-full"
               >
-                Schedule a website review (it's free!)
-              </Link>
+                See plans
+              </a>
             </li>
           </ul>
         )}

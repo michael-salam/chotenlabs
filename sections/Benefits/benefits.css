@@ -1,3 +1,7 @@
 .benefits {
   background-image: radial-gradient(150px, #170a29, #090410);
 }
+
+.bg-pattern {
+  background-image: url(../../public/images/bg-pattern.svg);
+}

@@ -47,14 +47,14 @@ const InteractiveProcess = () => {
         <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step I
         </p>
-        <h3 className="tracking-normal text-3xl mb-4">Review</h3>
+        <h3 className="tracking-normal text-3xl mb-4">Discovery</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
-          We analyze every aspect of your current site to identify strengths,
-          weaknesses, and opportunities for improvement to come up with a
-          strategy.
+          We hop on a call with you to analyse how a website fits into your
+          business, so we can come up with the best strategy and pick the right
+          plan for you.
         </p>
         <Link href="/schedule-a-review" className="external-link mx-auto">
-          <span>Schedule a free website review</span>
+          <span>Book a free website review</span>
           <Image src={arrow} height="14" width="auto" alt="Arrow" />
         </Link>
       </div>
@@ -68,8 +68,8 @@ const InteractiveProcess = () => {
         </p>
         <h3 className="tracking-normal text-3xl mb-4">Design</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
-          Once we know exactly what needs to be improved, we go ahead to
-          redesign the user interface and experience of your website.
+          Once we have a good idea about your web strategy, we create two custom
+          design mockups for you to pick from.
         </p>
       </div>
       <div
@@ -82,8 +82,8 @@ const InteractiveProcess = () => {
         </p>
         <h3 className="tracking-normal text-3xl mb-4">Development</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
-          Once we design a new user interface for your website, we work together
-          to bring it to life.
+          When we&apos;re done with the designs, we send them to you for
+          approval, and development starts immediately.
         </p>
       </div>
       <div
@@ -96,8 +96,9 @@ const InteractiveProcess = () => {
         </p>
         <h3 className="tracking-normal text-3xl mb-4">Launch</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
-          Finally, we launch your new website and provide training as well as
-          free 30 days post-launch support to your business.
+          Finally, we launch your new website, but that's not where it ends.
+          Your website is fully managed by us for the entire duration of your
+          plan.
         </p>
       </div>
     </>

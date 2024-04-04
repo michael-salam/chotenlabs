@@ -3,26 +3,39 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <header className="pt-8 pb-1 min-h-[80vh] flex flex-col md:flex-row gap-8 overflow-hidden">
+    <header className="pt-8 pb-1 min-h-[60vh] flex flex-col md:flex-row gap-8 overflow-hidden">
       <div className="flex-1 p-8 md:p-16">
-        <h1 className="mb-4 max-w-[80%]">
-          Premium website redesign{" "}
+        <h1 className="mb-4 max-w-[90%]">
+          Custom web design{" "}
           <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
-            for{" "}
+            on{" "}
           </span>
           <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
-            businesses
+            a{" "}
+          </span>
+          <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
+            subscription
           </span>
         </h1>
-        <p className="mb-8">
-          Redesign your website to get the benefits of a custom website
+        <p className="mb-8 max-w-[40ch]">
+          Get a premium, custom designed and developed website on an affordable
+          subscription.
         </p>
-        <Link
-          href="/schedule-a-review"
-          className="btn-accent px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block text-sm sm:text-lg"
-        >
-          Schedule a free website review
-        </Link>
+        <div className="flex gap-2">
+          <a
+            href="#pricing"
+            className="btn-accent px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block text-sm sm:text-lg"
+          >
+            See plans
+          </a>
+
+          <Link
+            href="/schedule-a-review"
+            className="bg-accent/10 hover:bg-accent/15 transition-colors rounded-full border border-accent/20 px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block text-sm sm:text-lg"
+          >
+            Book a free discovery call
+          </Link>
+        </div>
       </div>
 
       <div className="flex-1 grid grid-cols-5 grid-rows-2 gap-4 -mr-16 min-h-[50vh]">
