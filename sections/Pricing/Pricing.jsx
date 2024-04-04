@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import check from "@/public/images/check.svg";
+import checkDark from "@/public/images/check-dark.svg";
 
 import AvailableSpots from "@/ui/AvailableSpots/AvailableSpots";
 
@@ -48,153 +50,80 @@ const Pricing = () => {
   return (
     <section id="pricing">
       <p className="uppercase text-center">Pricing</p>
-      <h2 className="mb-4">Try our price calculator</h2>
+      <h2 className="mb-16">Explore plans</h2>
 
-      {/* <AvailableSpots /> */}
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-11/12 mx-auto p-8 rounded-2xl dark-bg-gradient">
-        <div className="col-span-1 col-1">
-          <div className="mb-4">
-            <p className="red-hat-font text-text-light font-bold mb-2">
-              Number of pages
-            </p>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setPageNumberRange("1-5")}
-                className={`${
-                  pageNumberRange === "1-5"
-                    ? "btn-accent"
-                    : "option red-hat-font"
-                }`}
-              >
-                1-5
-              </button>
-              <button
-                onClick={() => setPageNumberRange("6-10")}
-                className={`${
-                  pageNumberRange === "6-10"
-                    ? "btn-accent"
-                    : "option red-hat-font"
-                }`}
-              >
-                6-10
-              </button>
-              <button
-                onClick={() => setPageNumberRange("10-15")}
-                className={`${
-                  pageNumberRange === "10-15"
-                    ? "btn-accent"
-                    : "option red-hat-font"
-                }`}
-              >
-                10-15
-              </button>
-            </div>
-          </div>
-
-          <div className="mb-4">
-            <p className="red-hat-font text-text-light font-bold mb-2">
-              Style of design
-            </p>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setStyleOfDesign("standard")}
-                className={`${
-                  styleOfDesign === "standard"
-                    ? "btn-accent"
-                    : "option red-hat-font"
-                }`}
-              >
-                Standard
-              </button>
-              <button
-                onClick={() => setStyleOfDesign("high-end")}
-                className={`${
-                  styleOfDesign === "high-end"
-                    ? "btn-accent"
-                    : "option red-hat-font"
-                }`}
-              >
-                High-end
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <p className="red-hat-font text-text-light font-bold mb-2">
-              Include development?
-            </p>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setIncludeDevelopment("no")}
-                className={`${
-                  includeDevelopment === "no"
-                    ? "btn-accent"
-                    : "option red-hat-font"
-                }`}
-              >
-                No
-              </button>
-              <button
-                onClick={() => setIncludeDevelopment("yes")}
-                className={`${
-                  includeDevelopment === "yes"
-                    ? "btn-accent"
-                    : "option red-hat-font"
-                }`}
-              >
-                Yes
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-span-1">
-          <p className="red-hat-font text-2xl text-text-light mb-4">
-            Starts at:
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-4/5 mx-auto gap-8">
+        <div className="pricing-card">
+          <h3 className="p-2 border border-accent/30 mb-8 rounded-full tracking-normal uppercase text-text-mid text-sm">
+            Subscription
+          </h3>
+          <p className="red-hat-font mb-8">
+            <span className="gradient-text-bright font-black text-6xl">
+              349
+            </span>
+            <span className="text-accent text-lg font-bold">/month</span>
           </p>
-          <div className="flex items-center mb-4 text-4xl sm:text-5xl font-bold">
-            <span className="line-through text-accent/20">${totalCost}</span>
-            <span className="gradient-text-bright"> ${totalCost * 0.2}</span>
-            <Image
-              src={loadingSpinner}
-              height="32"
-              width="32"
-              alt="Loading spinner"
-              className={`${
-                isLoading ? "animate-spin block" : "hidden"
-              } ml-auto`}
-            />
-          </div>
+          <p className="px-4 text-left mb-8 text-sm">
+            Work with a designer to create your own one of a kind, unique
+            website. Get priority support for all your needs.
+          </p>
           <Link
             href="/schedule-a-review"
-            className="btn-accent inline-block px-8 py-3 text-center w-full text-base sm:text-xl"
+            className="btn-accent block rounded-2xl p-3 text-white red-hat-font"
           >
-            Redesign my website
+            Book a free discovery call →
           </Link>
         </div>
 
-        <div className="md:col-span-2 lg:col-span-1 flex flex-col sm:flex-row lg:flex-col gap-8 lg:gap-4 text-sm">
-          <div className="max-w-[40ch] flex-1">
-            <p className="font-bold text-text-light mb-2">Guaranteed:</p>
-            <p className="mb-2">
-              If you decide to also develop your website with us, we guarantee
-            </p>
-            <ul className="list-disc list-inside">
-              <li>A responsive (mobile-friendly) website</li>
-              <li>On-page SEO</li>
-              <li>Custom website (no templates)</li>
-              <li>Google Analytics setup</li>
-            </ul>
-          </div>
+        <div className="pricing-card h-fit">
+          <h3 className="p-2 border border-accent/30 mb-8 rounded-full tracking-normal uppercase text-text-mid text-sm">
+            One-time payment
+          </h3>
+          <p className="red-hat-font mb-8">
+            <span className="gradient-text-bright font-black text-6xl">
+              ???
+            </span>
+          </p>
+          <p className="px-4 text-left mb-8 text-sm">
+            Don&apos;t fancy a subscription, or have specific needs? Book a call
+            to get a custom quote.
+          </p>
+          <Link
+            href="/schedule-a-review"
+            className="btn-accent block rounded-2xl p-3 text-white red-hat-font"
+          >
+            Book a free discovery call →
+          </Link>
+        </div>
 
-          <div className="max-w-[40ch] flex-1">
-            <p className="font-bold text-text-light mb-2">Note:</p>
-            <p>
-              A custom quote will be required if your website has 15+ pages or
-              chatbot, database, e-commerce, or CMS integrations.
-            </p>
-          </div>
+        <div className="col-span-1">
+          <h3 className="text-2xl mb-4">What&apos;s included?</h3>
+          <ul className="list-disc list-inside text-sm">
+            <li>Maximum 10 pages</li>
+            <li className=" max-w-[40ch]">
+              Fully managed website: Includes website creation, setup,
+              maintenance, unlimited edits, and security.
+            </li>
+            <li>Hosting fees</li>
+            <li>Domain name registration/transfer</li>
+            <li>24-month minimum contract</li>
+            <li>Dedicated client portal</li>
+            <li>On-page SEO</li>
+            <li>Google analytics</li>
+          </ul>
+        </div>
+
+        <div className="col-span-1">
+          <h3 className="text-2xl mb-4">What&apos;s NOT included?</h3>
+          <ul className="list-disc list-inside text-sm">
+            <li>Off page SEO</li>
+            <li className=" max-w-[40ch]">Social media management</li>
+            <li>Marketing and advertising</li>
+            <li>Complex software development</li>
+            <li>IT Support</li>
+            <li>Content creation and copywriting</li>
+            <li>Graphic design/branding</li>
+          </ul>
         </div>
       </div>
     </section>

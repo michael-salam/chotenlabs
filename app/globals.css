@@ -80,8 +80,23 @@ section h2 {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient-text-dark {
+  background-image: linear-gradient(to bottom, #652fad, #090410);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .dark-bg-gradient {
   @apply border border-accent/5 bg-gradient-to-br from-gradient-dark-stops-0 to-gradient-dark-stops-1;
+}
+.light-bg-gradient {
+  @apply border border-accent/10 bg-gradient-to-br from-gradient-light-stops-0 to-gradient-light-stops-1;
+}
+
+.bg-pattern {
+  background-image: url(../public/images/bg-pattern.svg);
 }
 
 .external-link {

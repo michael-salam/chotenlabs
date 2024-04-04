@@ -59,7 +59,7 @@ const Navbar = () => {
             <a href="#faqs">FAQs</a>
           </li>
           <li>
-            <a href="#pricing" className="btn-accent p-4">
+            <a href="#pricing" className="btn-accent px-8 py-4">
               See plans
             </a>
           </li>

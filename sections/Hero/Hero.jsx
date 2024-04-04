@@ -18,20 +18,20 @@ const Hero = () => {
           </span>
         </h1>
         <p className="mb-8 max-w-[40ch]">
-          Get a premium, custom designed and developed website on an affordable
-          subscription.
+          Get a premium, custom designed and developed website for your business
+          on an affordable subscription.
         </p>
-        <div className="flex gap-2">
+        <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-2">
           <a
             href="#pricing"
-            className="btn-accent px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block text-sm sm:text-lg"
+            className="btn-accent px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block w-fit text-lg"
           >
             See plans
           </a>
 
           <Link
             href="/schedule-a-review"
-            className="bg-accent/10 hover:bg-accent/15 transition-colors rounded-full border border-accent/20 px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block text-sm sm:text-lg"
+            className="bg-accent/10 hover:bg-accent/15 transition-colors rounded-full border border-accent/20 px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block w-fit text-lg"
           >
             Book a free discovery call
           </Link>
