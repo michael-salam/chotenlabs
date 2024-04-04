@@ -1,9 +1,9 @@
 .faq-btn {
-  @apply text-left flex items-start justify-between gap-4 text-text-light font-semibold px-8 py-4 w-full border border-accent/5 rounded-full bg-gradient-to-br from-gradient-dark-stops-0 to-gradient-dark-stops-1;
+  @apply text-left text-sm sm:text-base flex items-start justify-between gap-4 text-text-light font-semibold px-4 sm:px-8 py-4 w-full border border-accent/5 rounded-2xl bg-gradient-to-br from-gradient-dark-stops-0 to-gradient-dark-stops-1;
 }
 
 .faq-details {
-  @apply text-sm leading-relaxed px-8;
+  @apply text-sm leading-relaxed px-4 sm:px-8;
 }
 
 .faq-details.active {
