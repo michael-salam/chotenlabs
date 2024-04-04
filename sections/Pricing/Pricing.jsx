@@ -54,7 +54,7 @@ const Pricing = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 w-11/12 md:w-4/5 mx-auto gap-8">
         <div className="pricing-card">
-          <h3 className="p-2 border border-accent/30 mb-8 rounded-full tracking-normal uppercase text-text-mid text-sm">
+          <h3 className="p-2 border border-accent/10 mb-8 rounded-full tracking-normal uppercase text-text-mid text-sm">
             Subscription
           </h3>
           <p className="red-hat-font mb-8">
@@ -76,7 +76,7 @@ const Pricing = () => {
         </div>
 
         <div className="pricing-card h-fit">
-          <h3 className="p-2 border border-accent/30 mb-8 rounded-full tracking-normal uppercase text-text-mid text-sm">
+          <h3 className="p-2 border border-accent/10 mb-8 rounded-full tracking-normal uppercase text-text-mid text-sm">
             One-time payment
           </h3>
           <p className="red-hat-font mb-8">
