@@ -126,6 +126,7 @@ const Navbar = () => {
         )}
 
         <button
+          aria-label="Menu"
           onClick={() => setIsMobileMenuVisible((prev) => !prev)}
           className="lg:hidden w-8 h-[25px] flex flex-col justify-between"
         >
