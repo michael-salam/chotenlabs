@@ -94,7 +94,7 @@ const InteractiveProcess = () => {
         <p className="red-hat-font gradient-text uppercase text-6xl sm:text-7xl -mb-8 font-black">
           Step IV
         </p>
-        <h3 className="tracking-normal text-3xl mb-4">Launch</h3>
+        <h3 className="tracking-normal text-3xl mb-4">Launch & Management</h3>
         <p className="max-w-[40ch] mx-auto mb-4">
           Finally, we launch your new website, but that's not where it ends.
           Your website is fully managed by us for the entire duration of your
