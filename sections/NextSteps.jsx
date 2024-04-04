@@ -18,7 +18,7 @@ const NextSteps = () => {
         target="_blank"
         className="btn-accent inline-block px-4 sm:px-8 py-4"
       >
-        Schedule a free discovery call →
+        Book a free discovery call →
       </a>
 
       <p className="py-16 text-center">ChotenLabs &copy;2024</p>
