@@ -29,12 +29,13 @@ const Hero = () => {
             See plans
           </a>
 
-          <Link
-            href="/schedule-a-review"
-            className="bg-accent/10 hover:bg-accent/15 transition-colors rounded-full border border-accent/20 px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block w-fit text-lg"
+          <a
+            href="https://calendly.com/chotencreativelabs/free-discovery-call"
+            target="_blank"
+            className="bg-accent/10 text-white red-hat-font hover:bg-accent/15 transition-colors rounded-full border border-accent/20 px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block w-fit text-lg"
           >
             Book a free discovery call
-          </Link>
+          </a>
         </div>
       </div>
 

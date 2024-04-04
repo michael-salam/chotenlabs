@@ -13,12 +13,13 @@ const NextSteps = () => {
         We won&apos;t ask you to subscribe for a website just yet. For a start,
         you can request a free discovery call.
       </p>
-      <Link
-        href="/schedule-a-review"
+      <a
+        href="https://calendly.com/chotencreativelabs/free-discovery-call"
+        target="_blank"
         className="btn-accent inline-block px-4 sm:px-8 py-4"
       >
         Schedule a free discovery call →
-      </Link>
+      </a>
 
       <p className="py-16 text-center">ChotenLabs &copy;2024</p>
     </section>

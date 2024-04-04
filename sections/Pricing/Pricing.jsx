@@ -67,12 +67,13 @@ const Pricing = () => {
             Work with a designer to create your own one of a kind, unique
             website. Get priority support for all your needs.
           </p>
-          <Link
-            href="/schedule-a-review"
+          <a
+            href="https://calendly.com/chotencreativelabs/onboarding-call"
+            target="_blank"
             className="btn-accent block rounded-2xl p-3 text-white red-hat-font"
           >
             Get started →
-          </Link>
+          </a>
         </div>
 
         <div className="pricing-card h-fit">
@@ -89,7 +90,8 @@ const Pricing = () => {
             to get a custom quote.
           </p>
           <Link
-            href="/schedule-a-review"
+            href="https://calendly.com/chotencreativelabs/free-discovery-call"
+            target="_blank"
             className="btn-accent block rounded-2xl p-3 text-white red-hat-font"
           >
             Book a free discovery call →

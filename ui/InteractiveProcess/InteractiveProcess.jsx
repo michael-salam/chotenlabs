@@ -53,10 +53,14 @@ const InteractiveProcess = () => {
           business, so we can come up with the best strategy and pick the right
           plan for you.
         </p>
-        <Link href="/schedule-a-review" className="external-link mx-auto">
-          <span>Book a free website review</span>
+        <a
+          href="https://calendly.com/chotencreativelabs/free-discovery-call"
+          target="_blank"
+          className="external-link mx-auto"
+        >
+          <span>Book a free discovery call</span>
           <Image src={arrow} height="14" width="auto" alt="Arrow" />
-        </Link>
+        </a>
       </div>
       <div
         className={`${
