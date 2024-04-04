@@ -71,7 +71,7 @@ const Pricing = () => {
             href="/schedule-a-review"
             className="btn-accent block rounded-2xl p-3 text-white red-hat-font"
           >
-            Book a free discovery call →
+            Get started →
           </Link>
         </div>
 
