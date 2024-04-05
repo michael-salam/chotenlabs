@@ -13,11 +13,13 @@ const Hero = () => {
             affordable
           </span>
         </h1>
-        <p className="mb-8 max-w-[40ch]">
-          Get a fully premium, custom designed and developed website for your
-          business on a monthly plan, fully managed by us so you don&apos;t have
-          to.
-        </p>
+        <div className="key-features">
+          <p>Premium business websites</p>
+          <p>Custom-designed</p>
+          <p>Custom-developed</p>
+          <p>Affordable monthly plan</p>
+          <p>Fully managed</p>
+        </div>
         <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-2">
           <a
             href="#pricing"
@@ -31,7 +33,7 @@ const Hero = () => {
             target="_blank"
             className="bg-accent/10 text-white red-hat-font hover:bg-accent/15 transition-colors rounded-2xl border border-accent/20 px-4 sm:px-8 py-2 sm:py-3 mb-1 inline-block w-fit text-lg"
           >
-            Book a free discovery call
+            Book a free discovery call →
           </a>
         </div>
       </div>

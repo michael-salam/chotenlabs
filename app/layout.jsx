@@ -11,7 +11,8 @@ const redHatDisplay = Red_Hat_Display({
 
 export const metadata = {
   title: "Choten Labs",
-  description: "Website redesign for service-based businesses",
+  description:
+    "We create top-tier business websites on a monthly plan and manage it all so you don't have to.",
 };
 
 export default function RootLayout({ children }) {

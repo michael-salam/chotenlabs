@@ -1,3 +1,11 @@
+.key-features {
+  @apply flex flex-wrap items-center gap-2 my-8;
+}
+
+.key-features p {
+  @apply py-2 px-4 bg-accent/10 rounded-2xl;
+}
+
 .card {
   @apply bg-center bg-no-repeat bg-cover relative after:absolute after:-inset-[2px] after:bg-[#10081C] after:hover:opacity-0 after:rounded-2xl after:transition-opacity after:duration-700;
 }
