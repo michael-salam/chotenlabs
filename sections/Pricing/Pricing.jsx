@@ -32,7 +32,7 @@ const Pricing = () => {
           </a>
         </div>
 
-        <div className="grid p-8 col-span-12 lg:col-span-9 lg:grid-cols-2 gap-8 bg-accent/5 border border-accent/10 rounded-3xl">
+        <div className="grid p-8 col-span-12 lg:col-span-9 lg:grid-cols-2 gap-8 bg-accent/5 border border-accent/10 rounded-2xl">
           <div className="col-span-1">
             <h3 className="text-2xl mb-4 tracking-normal">
               What&apos;s included?
