@@ -5,20 +5,18 @@ const Hero = () => {
     <header className="pt-8 pb-1 min-h-[60vh] flex flex-col md:flex-row gap-8 overflow-hidden">
       <div className="flex-1 p-8 md:p-16">
         <h1 className="mb-4 sm:max-w-[90%]">
-          Custom web design{" "}
+          Premium web design{" "}
           <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
-            on{" "}
+            made{" "}
           </span>
           <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
-            a{" "}
-          </span>
-          <span className="text-accent after:bg-[#5B2B9C]/50 relative after:absolute after:left-0 after:bottom-1 sm:after:bottom-3 lg:after:bottom-4 after:h-4 after:w-full after:-z-10">
-            subscription
+            affordable
           </span>
         </h1>
         <p className="mb-8 max-w-[40ch]">
-          Get a premium, custom designed and developed website for your business
-          on an affordable subscription.
+          Get a fully premium, custom designed and developed website for your
+          business on a monthly plan, fully managed by us so you don&apos;t have
+          to.
         </p>
         <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-2">
           <a

@@ -57,17 +57,19 @@ const Pricing = () => {
         <div className="col-span-1">
           <h3 className="text-2xl mb-4">What&apos;s included?</h3>
           <ul className="list-disc list-inside text-sm">
-            <li>Maximum 10 pages</li>
             <li className=" max-w-[40ch]">
-              Fully managed website: Includes website creation, setup,
+              A fully managed website: Includes website creation, setup,
               maintenance, unlimited edits, and security.
             </li>
-            <li>Hosting fees</li>
+            <li>Maximum 20 pages</li>
+            <li>A mobile-friendly website</li>
+            <li>Website hosting</li>
             <li>Domain name registration/transfer</li>
             <li>24-month minimum contract</li>
             <li>Dedicated client portal</li>
             <li>On-page SEO</li>
-            <li>Google analytics</li>
+            <li>Google analytics setup</li>
+            <li>Quarterly performance reports</li>
           </ul>
         </div>
 
