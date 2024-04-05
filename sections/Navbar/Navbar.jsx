@@ -29,7 +29,7 @@ const Navbar = () => {
         className={` ${
           scrollDistance > 100 &&
           "bg-accent/10 backdrop-blur border border-accent/10"
-        } flex items-center justify-between w-11/12 mx-auto sticky top-4 mt-4 p-4 lg:py-0 lg:pr-0 lg:pl-8 rounded-full z-50 transition-colors duration-500`}
+        } flex items-center justify-between w-11/12 mx-auto sticky top-4 mt-4 p-4 lg:py-0 lg:pr-0 lg:pl-8 rounded-2xl z-50 transition-colors duration-500`}
       >
         <Link href="/">
           <Image src={logo} alt="ChotenLabs logo" height="20" width="auto" />
@@ -40,7 +40,7 @@ const Navbar = () => {
             scrollDistance > 100
               ? "bg-transparent"
               : "bg-accent/10 backdrop-blur border border-accent/10"
-          } hidden lg:flex items-center gap-4 rounded-full pl-8 py-4 pr-[2px]`}
+          } hidden lg:flex items-center gap-4 rounded-2xl pl-8 py-4 pr-[2px]`}
         >
           <li className="navlink">
             <a href="#services">Services</a>

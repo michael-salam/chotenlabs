@@ -48,7 +48,7 @@ h2 {
 
 .btn-accent {
   font-family: var(--font-red-hat-display);
-  @apply bg-gradient-to-b from-gradient-light-stops-0 to-gradient-light-stops-1 rounded-full text-text-dark font-semibold hover:opacity-80 transition-opacity;
+  @apply bg-gradient-to-b from-gradient-light-stops-0 to-gradient-light-stops-1 rounded-2xl text-text-dark font-semibold hover:opacity-80 transition-opacity;
 }
 
 section {

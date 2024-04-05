@@ -6,6 +6,6 @@
   @apply px-4 sm:px-6 py-2 text-sm md:text-base;
 }
 
-.pricing-card {
-  @apply flex flex-col col-span-1 text-center bg-accent/5 border border-accent/10 p-2 rounded-3xl;
+.list-item {
+  @apply flex items-start gap-2 mb-2;
 }

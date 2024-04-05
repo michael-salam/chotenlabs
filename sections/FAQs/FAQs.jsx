@@ -182,7 +182,7 @@ const FAQs = () => {
             <a
               href="mailto:hello@chotenlabs.com"
               target="_blank"
-              className="mb-4 hover:opacity-80 transition-opacity bg-accent/10 flex items-center gap-4 font-medium text-text-light rounded-full"
+              className="mb-4 hover:opacity-80 transition-opacity bg-accent/10 flex items-center gap-4 font-medium text-text-light rounded-2xl"
             >
               <Image
                 src={gmailIcon}
@@ -197,7 +197,7 @@ const FAQs = () => {
             <a
               href="https://instagram.com/chotenlabs"
               target="_blank"
-              className="hover:opacity-80 transition-opacity bg-accent/10 flex items-center gap-4 font-medium text-text-light rounded-full"
+              className="hover:opacity-80 transition-opacity bg-accent/10 flex items-center gap-4 font-medium text-text-light rounded-2xl"
             >
               <Image
                 src={instagramIcon}
