@@ -5,8 +5,8 @@ const NextSteps = () => {
       <h2 className="mb-4">So, you&apos;ve made it to the end</h2>
 
       <p className="mb-4 max-w-[40ch] mx-auto text-lg">
-        We won&apos;t ask you to subscribe for a website just yet. For a start,
-        you can request a free discovery call.
+        We won&apos;t ask you to give us your money just yet. For a start, you
+        can request a free discovery call.
       </p>
       <a
         href="https://calendly.com/chotencreativelabs/free-discovery-call"
