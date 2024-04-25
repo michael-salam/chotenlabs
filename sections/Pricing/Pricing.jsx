@@ -8,7 +8,7 @@ const Pricing = () => {
   return (
     <section id="pricing">
       <p className="uppercase text-center">Pricing</p>
-      <h2 className="mb-16">$179/mo, 24-month minimum duration</h2>
+      <h2 className="mb-16">$180/mo, 24-month minimum duration</h2>
 
       <div className="grid grid-cols-12 gap-4 w-full sm:w-3/5 sm:mx-auto lg:mx-4 lg:w-full">
         <div className="col-span-12 lg:col-span-3 self-center p-2 text-center light-bg-gradient rounded-[1.25rem] text-sm">
@@ -16,7 +16,7 @@ const Pricing = () => {
             Monthly plan
           </p>
           <p className="gradient-text-dark red-hat-font my-8">
-            <span className="text-8xl font-black">179</span>
+            <span className="text-8xl font-black">$180</span>
             <span className="font-bold text-lg">/month</span>
           </p>
           <p className="px-4 text-left text-base mb-8 text-text-dark">
